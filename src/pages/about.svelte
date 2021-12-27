@@ -4,5 +4,22 @@
 
 <main>
   <HeaderComponent />
-  <div>This is an about page</div>
+  <div class="about-main-div">
+    <span class="about-title-div">Coming Soon :)</span>
+  </div>
 </main>
+
+<style>
+  .about-main-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .about-title-div {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1em 0;
+  }
+</style>

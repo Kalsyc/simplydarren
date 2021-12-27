@@ -1,5 +1,4 @@
 <script lang="ts">
-  export let name: string;
   import { Router } from '@roxi/routify';
   import { routes } from '../.routify/routes';
 </script>
