@@ -4,5 +4,4 @@
 
 <main>
   <HeaderComponent />
-  <div>Coming Soon :)</div>
 </main>
