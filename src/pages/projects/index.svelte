@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { url } from '@roxi/routify';
-
+  import { url, metatags } from '@roxi/routify';
   import HeaderComponent from '../../components/HeaderComponent.svelte';
+
+  metatags.title = 'Projects';
 </script>
 
 <main>
