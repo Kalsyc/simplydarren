@@ -108,7 +108,7 @@
   .main-short-div {
     font-size: 1.25rem;
     font-weight: 400;
-    margin: 0 1em;
+    margin: 0 2em;
   }
 
   .main-buttons-div {
