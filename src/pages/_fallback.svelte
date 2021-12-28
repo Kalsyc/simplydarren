@@ -1,5 +1,8 @@
 <script lang="ts">
   import { url } from '@roxi/routify';
+  import { metatags } from '@roxi/routify';
+
+  metatags.title = 'Error! Not found';
 </script>
 
 <main>
