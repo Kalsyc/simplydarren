@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { url, metatags } from '@roxi/routify';
   import HeaderComponent from '../../components/HeaderComponent.svelte';
+  import FooterComponent from '../../components/FooterComponent.svelte';
+  import { url, metatags } from '@roxi/routify';
 
   metatags.title = 'Projects';
 </script>
@@ -12,6 +13,7 @@
     <a class="cullinary-link" href={$url('/projects/cull1')}>Click here to play CULLinary</a>
     <a class="cullinary-link" href={$url('/projects/cull2')}>Click here to play CULLinary2</a>
   </div>
+  <FooterComponent />
 </main>
 
 <style>
@@ -20,6 +22,7 @@
     flex-direction: column;
     text-align: center;
     margin: 1em 0;
+    min-height: 100vh;
   }
 
   .project-title-div {
