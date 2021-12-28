@@ -1,6 +1,7 @@
 <script lang="ts">
   import HeaderComponent from '../../components/HeaderComponent.svelte';
-  import { metatags } from '@roxi/routify';
+  import FooterComponent from '../../components/FooterComponent.svelte';
+  import { url, metatags } from '@roxi/routify';
 
   metatags.title = 'CULLinary2';
 </script>
@@ -19,6 +20,7 @@
       class="cullinary-iframe"
     />
   </div>
+  <FooterComponent />
 </main>
 
 <style>
