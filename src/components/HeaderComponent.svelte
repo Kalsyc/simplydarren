@@ -9,8 +9,8 @@
 
   const toggleNav = (): void => {
     const dropdownDiv: HTMLElement = document.getElementById('header-dropdown-div');
-    dropdownDiv.style.width = isNavOpen ? '150px' : '0px';
     isNavOpen = !isNavOpen;
+    dropdownDiv.style.width = isNavOpen ? '150px' : '0px';
   };
 </script>
 
