@@ -1,15 +1,12 @@
 <script lang="ts">
   import { goto, url } from '@roxi/routify';
 
-  let isNavOpen: boolean = false;
-
   const goToHome = (): void => {
     $goto('/');
   };
 
-  const toggleNav = (): void => {
+  const toggleNav = (isNavOpen: boolean): void => {
     const dropdownDiv: HTMLElement = document.getElementById('header-dropdown-div');
-    isNavOpen = !isNavOpen;
     dropdownDiv.style.width = isNavOpen ? '150px' : '0px';
   };
 </script>
@@ -26,8 +23,9 @@
       <a class="header-link" href="https://github.com/Kalsyc"><img class="header-img-link" alt="" src="/img/GitHub-Mark-64px.png" /></a>
     </div>
     <div class="header-links-nav-res">
-      <img class="header-dropdown-img-res" alt="" src="/img/outline_menu_black_36dp.png" on:click={() => toggleNav()} />
+      <img class="header-dropdown-img-res" alt="" src="/img/outline_menu_black_36dp.png" on:click={() => toggleNav(true)} />
       <div id="header-dropdown-div" class="header-dropdown-div">
+        <img class="header-dropdown-close-res" alt="" src="/img/outline_arrow_forward_black_36dp.png" on:click={() => toggleNav(false)} />
         <a class="header-link-res" href={$url('/about')}>About</a>
         <a class="header-link-res" href={$url('/blog')}>Blog</a>
         <a class="header-link-res" href={$url('/projects')}>Projects</a>
@@ -63,8 +61,8 @@
   .header-title-img-res {
     object-fit: contain;
     aspect-ratio: 1;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     display: block;
   }
 
@@ -90,8 +88,8 @@
 
   .header-links-nav-res {
     display: none;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     text-align: center;
   }
 
@@ -131,12 +129,16 @@
     margin: 0.4em;
   }
 
+  .header-dropdown-close-res {
+    height: 50px;
+    width: 50px;
+  }
+
   .header-dropdown-div {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
-    top: 59px;
+    top: 0;
     right: 0;
     background-color: #efe2ba;
     overflow-x: hidden;
