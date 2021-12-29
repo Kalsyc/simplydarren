@@ -1,6 +1,6 @@
 <script lang="ts">
   import HeaderComponent from '../components/HeaderComponent.svelte';
-  import { metatags, url, goto } from '@roxi/routify';
+  import { metatags, goto } from '@roxi/routify';
   import FooterComponent from '../components/FooterComponent.svelte';
 
   metatags.title = 'Simply Darren';
