@@ -71,7 +71,21 @@
       </div>
     </nav>
     <div class="about-main-body">
-      <div class="about-section about-bio-div" id="bio" data-label="bio">Bio</div>
+      <div class="about-section about-bio-div" id="bio" data-label="bio">
+        <span class="about-bio-title">Bio: Darren Sim</span>
+        <img class="about-bio-img" alt="" src="/img/about-bio.jpg" />
+        <div class="about-bio-text-div">
+          <span class="about-bio-text">
+            Born in 1997 in Singapore, Darren Sim is currently a Final Year Computer Science Major at the National University of Singapore (NUS). His
+            main interests in the world of tech include but not limited to Web Development, Game Design, AR/VR Applications and UI/UX Design.
+            <br /><br />
+            Darren also has a passion for teaching and has been serving as a Teaching Assistant (TA) for various modules in university since his second
+            year.
+            <br /><br />
+            Outside of his work, Darren is also an enthusiast in music, having been an avid guitar player for almost a decade.
+          </span>
+        </div>
+      </div>
       <div class="about-section about-education-div" id="education" data-label="education">Education</div>
       <div class="about-section about-work-div" id="work" data-label="work">Work Experience</div>
       <div class="about-section about-teaching-div" id="teaching" data-label="teaching">Teaching Experience</div>
@@ -147,6 +161,36 @@
 
   .about-bio-div {
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+  }
+
+  .about-bio-title {
+    color: #e87121;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0.5em 1em;
+  }
+
+  .about-bio-img {
+    border-radius: 5%;
+    aspect-ratio: 1;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+
+  .about-bio-text-div {
+    padding: 3em;
+    width: 50%;
+  }
+
+  .about-bio-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-justify: distribute-all-lines;
   }
 
   .about-education-div {
