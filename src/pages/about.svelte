@@ -3,6 +3,7 @@
   import FooterComponent from '../components/FooterComponent.svelte';
   import { metatags } from '@roxi/routify';
   import { onDestroy, onMount } from 'svelte';
+  import TimelineComponent from '../components/TimelineComponent.svelte';
 
   metatags.title = 'About';
 
@@ -84,6 +85,7 @@
       </div>
       <div class="about-section about-work-div" id="work" data-label="work">
         <span class="about-section-title">Work Experience</span>
+        <TimelineComponent />
       </div>
       <div class="about-section about-teaching-div" id="teaching" data-label="teaching">Teaching Experience</div>
       <div class="about-section about-skills-div" id="skills" data-label="skills">Skills</div>
@@ -195,19 +197,19 @@
   }
 
   .about-teaching-div {
-    background-color: aquamarine;
+    background-color: white;
   }
 
   .about-skills-div {
-    background-color: azure;
+    background-color: antiquewhite;
   }
 
   .about-projects-div {
-    background-color: beige;
+    background-color: white;
   }
 
   .about-contact-div {
-    background-color: bisque;
+    background-color: antiquewhite;
   }
 
   @media only screen and (max-width: 600px) {
