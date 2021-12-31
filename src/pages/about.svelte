@@ -46,10 +46,6 @@
         <span class="about-nav-label about-nav-label-selected" id="bio-circle-label">Bio</span>
       </div>
       <div class="about-nav-item">
-        <a href="#education" class="about-nav-link"><div class="link-circle" id="education-circle" /></a>
-        <span class="about-nav-label" id="education-circle-label">Education</span>
-      </div>
-      <div class="about-nav-item">
         <a href="#work" class="about-nav-link"><div class="link-circle" id="work-circle" /></a>
         <span class="about-nav-label" id="work-circle-label">Work Experience</span>
       </div>
@@ -72,7 +68,7 @@
     </nav>
     <div class="about-main-body">
       <div class="about-section about-bio-div" id="bio" data-label="bio">
-        <span class="about-bio-title">Bio: Darren Sim</span>
+        <span class="about-section-title">Bio: Darren Sim</span>
         <img class="about-bio-img" alt="" src="/img/about-bio.jpg" />
         <div class="about-bio-text-div">
           <span class="about-bio-text">
@@ -86,8 +82,9 @@
           </span>
         </div>
       </div>
-      <div class="about-section about-education-div" id="education" data-label="education">Education</div>
-      <div class="about-section about-work-div" id="work" data-label="work">Work Experience</div>
+      <div class="about-section about-work-div" id="work" data-label="work">
+        <span class="about-section-title">Work Experience</span>
+      </div>
       <div class="about-section about-teaching-div" id="teaching" data-label="teaching">Teaching Experience</div>
       <div class="about-section about-skills-div" id="skills" data-label="skills">Skills</div>
       <div class="about-section about-projects-div" id="projects" data-label="projects">Projects</div>
@@ -157,6 +154,7 @@
 
   .about-section {
     min-height: 100vh;
+    padding: 1em 0;
   }
 
   .about-bio-div {
@@ -164,10 +162,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3em 0;
   }
 
-  .about-bio-title {
+  .about-section-title {
     color: #e87121;
     font-weight: 700;
     font-size: 2.5rem;
@@ -193,12 +190,8 @@
     text-justify: distribute-all-lines;
   }
 
-  .about-education-div {
-    background-color: antiquewhite;
-  }
-
   .about-work-div {
-    background-color: aqua;
+    background-color: antiquewhite;
   }
 
   .about-teaching-div {
