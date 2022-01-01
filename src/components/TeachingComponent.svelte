@@ -43,6 +43,7 @@
     align-items: flex-start;
     justify-content: center;
     margin: 2em 20%;
+    text-align: left;
   }
 
   .teaching-section {
@@ -66,7 +67,6 @@
 
   .teaching-text {
     font-weight: 500;
-    text-align: left;
   }
 
   .teaching-divider {
