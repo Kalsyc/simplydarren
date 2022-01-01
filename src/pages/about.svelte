@@ -18,7 +18,11 @@
         document.querySelectorAll('.about-nav-link').forEach((navLink) => {
           navLink.classList.remove('link-circle-selected');
         });
-        const visibleSection: IntersectionObserverEntry = entries.filter((entry) => entry.isIntersecting)[0];
+        const allVisibleSections: IntersectionObserverEntry[] = entries.filter((entry) => entry.isIntersecting);
+        if (allVisibleSections.length === 0) {
+          return;
+        }
+        const visibleSection: IntersectionObserverEntry = allVisibleSections[0];
         const targetId: string = visibleSection.target.id;
         if (currentNav != targetId) {
           document.getElementById(currentNav + '-circle').classList.remove('link-circle-selected');
