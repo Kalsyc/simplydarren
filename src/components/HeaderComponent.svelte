@@ -13,7 +13,7 @@
 
 <div class="header-background-div">
   <div class="header-items-div">
-    <span class="header-title-span" on:click={() => goToHome()}>SIMPLY DARREN</span>
+    <a class="title-link" href={$url('/')}><span class="header-title-span">SIMPLY DARREN</span></a>
     <a class="header-title-span-res" href={$url('/')}><img class="header-title-img-res" alt="" src="/img/Simply Darren Transparent.png" /></a>
     <div class="header-links-div">
       <a class="header-link" href={$url('/about')}>About</a>
@@ -75,6 +75,10 @@
 
   .header-title-span:hover {
     cursor: pointer;
+  }
+
+  .title-link {
+    text-decoration: none;
   }
 
   .header-links-div {

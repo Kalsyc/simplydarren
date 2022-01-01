@@ -3,6 +3,8 @@
   import FooterComponent from '../components/FooterComponent.svelte';
   import { metatags } from '@roxi/routify';
   import { onDestroy, onMount } from 'svelte';
+  import TimelineComponent from '../components/TimelineComponent.svelte';
+  import BioComponent from '../components/BioComponent.svelte';
 
   metatags.title = 'About';
 
@@ -46,10 +48,6 @@
         <span class="about-nav-label about-nav-label-selected" id="bio-circle-label">Bio</span>
       </div>
       <div class="about-nav-item">
-        <a href="#education" class="about-nav-link"><div class="link-circle" id="education-circle" /></a>
-        <span class="about-nav-label" id="education-circle-label">Education</span>
-      </div>
-      <div class="about-nav-item">
         <a href="#work" class="about-nav-link"><div class="link-circle" id="work-circle" /></a>
         <span class="about-nav-label" id="work-circle-label">Work Experience</span>
       </div>
@@ -71,9 +69,14 @@
       </div>
     </nav>
     <div class="about-main-body">
-      <div class="about-section about-bio-div" id="bio" data-label="bio">Bio</div>
-      <div class="about-section about-education-div" id="education" data-label="education">Education</div>
-      <div class="about-section about-work-div" id="work" data-label="work">Work Experience</div>
+      <div class="about-section about-bio-div" id="bio" data-label="bio">
+        <span class="about-section-title">Bio: Darren Sim</span>
+        <BioComponent />
+      </div>
+      <div class="about-section about-work-div" id="work" data-label="work">
+        <span class="about-section-title">Work Experience</span>
+        <TimelineComponent />
+      </div>
       <div class="about-section about-teaching-div" id="teaching" data-label="teaching">Teaching Experience</div>
       <div class="about-section about-skills-div" id="skills" data-label="skills">Skills</div>
       <div class="about-section about-projects-div" id="projects" data-label="projects">Projects</div>
@@ -143,34 +146,38 @@
 
   .about-section {
     min-height: 100vh;
+    padding: 1em 0;
   }
 
   .about-bio-div {
     background-color: aliceblue;
   }
 
-  .about-education-div {
-    background-color: antiquewhite;
+  .about-section-title {
+    color: #e87121;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0.5em 1em;
   }
 
   .about-work-div {
-    background-color: aqua;
+    background-color: antiquewhite;
   }
 
   .about-teaching-div {
-    background-color: aquamarine;
+    background-color: white;
   }
 
   .about-skills-div {
-    background-color: azure;
+    background-color: antiquewhite;
   }
 
   .about-projects-div {
-    background-color: beige;
+    background-color: white;
   }
 
   .about-contact-div {
-    background-color: bisque;
+    background-color: antiquewhite;
   }
 
   @media only screen and (max-width: 600px) {
