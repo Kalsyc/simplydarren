@@ -5,6 +5,7 @@
   import { onDestroy, onMount } from 'svelte';
   import TimelineComponent from '../components/TimelineComponent.svelte';
   import BioComponent from '../components/BioComponent.svelte';
+  import TeachingComponent from '../components/TeachingComponent.svelte';
 
   metatags.title = 'About';
 
@@ -81,10 +82,19 @@
         <span class="about-section-title">Work Experience</span>
         <TimelineComponent />
       </div>
-      <div class="about-section about-teaching-div" id="teaching" data-label="teaching">Teaching Experience</div>
-      <div class="about-section about-skills-div" id="skills" data-label="skills">Skills</div>
-      <div class="about-section about-projects-div" id="projects" data-label="projects">Projects</div>
-      <div class="about-section about-contact-div" id="contact" data-label="contact">Contact Me</div>
+      <div class="about-section about-teaching-div" id="teaching" data-label="teaching">
+        <span class="about-section-title">Teaching Experience</span>
+        <TeachingComponent />
+      </div>
+      <div class="about-section about-skills-div" id="skills" data-label="skills">
+        <span class="about-section-title">Skills</span>
+      </div>
+      <div class="about-section about-projects-div" id="projects" data-label="projects">
+        <span class="about-section-title">Notable Projects</span>
+      </div>
+      <div class="about-section about-contact-div" id="contact" data-label="contact">
+        <span class="about-section-title">Contact Me</span>
+      </div>
     </div>
   </div>
   <FooterComponent />
@@ -153,10 +163,6 @@
     padding: 1em 0;
   }
 
-  .about-bio-div {
-    background-color: aliceblue;
-  }
-
   .about-section-title {
     color: #e87121;
     font-weight: 700;
@@ -164,24 +170,28 @@
     padding: 0.5em 1em;
   }
 
+  .about-bio-div {
+    background-color: aliceblue;
+  }
+
   .about-work-div {
     background-color: antiquewhite;
   }
 
   .about-teaching-div {
-    background-color: white;
+    background-color: beige;
   }
 
   .about-skills-div {
-    background-color: antiquewhite;
+    background-color: azure;
   }
 
   .about-projects-div {
-    background-color: white;
+    background-color: cornsilk;
   }
 
   .about-contact-div {
-    background-color: antiquewhite;
+    background-color: floralwhite;
   }
 
   @media only screen and (max-width: 600px) {
