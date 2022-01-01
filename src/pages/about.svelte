@@ -6,6 +6,7 @@
   import TimelineComponent from '../components/TimelineComponent.svelte';
   import BioComponent from '../components/BioComponent.svelte';
   import TeachingComponent from '../components/TeachingComponent.svelte';
+  import SkillsComponent from '../components/SkillsComponent.svelte';
 
   metatags.title = 'About';
 
@@ -88,6 +89,7 @@
       </div>
       <div class="about-section about-skills-div" id="skills" data-label="skills">
         <span class="about-section-title">Skills</span>
+        <SkillsComponent />
       </div>
       <div class="about-section about-projects-div" id="projects" data-label="projects">
         <span class="about-section-title">Notable Projects</span>
@@ -183,11 +185,11 @@
   }
 
   .about-skills-div {
-    background-color: azure;
+    background-color: cornsilk;
   }
 
   .about-projects-div {
-    background-color: cornsilk;
+    background-color: honeydew;
   }
 
   .about-contact-div {
