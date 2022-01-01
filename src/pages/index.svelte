@@ -18,7 +18,7 @@
   };
 
   const goToResume = (): void => {
-    window.location.assign('https://kalsycdotcom.s3.ap-southeast-1.amazonaws.com/Sim+Jun+Yuen%2C+Darren+Resume+(28+Dec+2021).pdf');
+    window.location.assign('https://kalsycdotcom.s3.ap-southeast-1.amazonaws.com/Sim+Jun+Yuen%2C+Darren+Resume+(1+Jan+2022).pdf');
   };
 </script>
 
@@ -167,7 +167,6 @@
     }
   }
 
-  /* Firefox < 16 */
   @-moz-keyframes fadein {
     from {
       opacity: 0;
@@ -177,7 +176,6 @@
     }
   }
 
-  /* Safari, Chrome and Opera > 12.1 */
   @-webkit-keyframes fadein {
     from {
       opacity: 0;
@@ -187,7 +185,6 @@
     }
   }
 
-  /* Internet Explorer */
   @-ms-keyframes fadein {
     from {
       opacity: 0;
@@ -197,7 +194,6 @@
     }
   }
 
-  /* Opera < 12.1 */
   @-o-keyframes fadein {
     from {
       opacity: 0;
