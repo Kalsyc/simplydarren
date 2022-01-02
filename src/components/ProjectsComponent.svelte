@@ -8,7 +8,11 @@
       <div class="project-info">
         <span class="project-title">Digital Kampung</span>
         <div class="project-divider" />
-        <span class="project-text">An online platform that enables users to search for and rate/review hawker stalls across Singapore.</span>
+        <span class="project-text">
+          An online platform that enables users to search for and rate/review hawker stalls across Singapore.
+          <br />
+          <strong>Tech Stack: React, Express, PostgreSQL, NodeJS</strong>
+        </span>
       </div>
       <img class="project-img" alt="" src="/img/digitalkampung-img.png" />
     </div>
@@ -25,6 +29,8 @@
         <div class="project-divider" />
         <span class="project-text">
           The CULLinary series is a game series that combines aspects of a Dungeon Crawler and a Food Delivery/Restaurant Simulator.
+          <br />
+          <strong>Tech Stack: Unity</strong>
         </span>
       </div>
       <img class="project-img" alt="" src="/img/cullinary-img.png" />
@@ -44,6 +50,8 @@
         <span class="project-text">
           Project Kampong is an online collaborative platform that serves as a digital aggregator to effectively map assets across communities and
           establish a data and documentation center for the Social Sector to provide clarity in needs, resources and gaps.
+          <br />
+          <strong>Tech Stack: Angular, NestJS, GraphQL, MongoDB</strong>
         </span>
       </div>
       <img class="project-img" alt="" src="/img/kampong-img.png" />
@@ -61,6 +69,8 @@
         <span class="project-text">
           SafeSpace is a VR Mental Health Simulator and Meditation Guide that aims to enhance awareness and understanding of anxiety disorders through
           two modes of gameplay
+          <br />
+          <strong>Tech Stack: Unity, SRanipal, TobiiXR SDKs </strong>
         </span>
       </div>
       <img class="project-img" alt="" src="/img/safespace-img.png" />
