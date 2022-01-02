@@ -7,6 +7,7 @@
   import BioComponent from '../components/BioComponent.svelte';
   import TeachingComponent from '../components/TeachingComponent.svelte';
   import SkillsComponent from '../components/SkillsComponent.svelte';
+  import ProjectsComponent from '../components/ProjectsComponent.svelte';
 
   metatags.title = 'About';
 
@@ -93,6 +94,7 @@
       </div>
       <div class="about-section about-projects-div" id="projects" data-label="projects">
         <span class="about-section-title">Notable Projects</span>
+        <ProjectsComponent />
       </div>
       <div class="about-section about-contact-div" id="contact" data-label="contact">
         <span class="about-section-title">Contact Me</span>
