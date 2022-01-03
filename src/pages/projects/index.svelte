@@ -2,31 +2,29 @@
   import HeaderComponent from '../../components/HeaderComponent.svelte';
   import FooterComponent from '../../components/FooterComponent.svelte';
   import { url, metatags } from '@roxi/routify';
-  import { onMount } from 'svelte';
 
   metatags.title = 'Simply Darren | Projects';
-
-  const importMarkdown = async () => {
-    return await import(`../../markdown/Test.md`);
-  };
-
-  let text;
-
-  onMount(() => {
-    importMarkdown().then((res) => {
-      text = res.default;
-    });
-  });
 </script>
 
 <main>
   <HeaderComponent />
   <div class="project-main-div">
-    <!--<svelte:component this={text} />-->
     <span class="project-title-div">My Projects</span>
     <div class="projects-completed">
       <span class="completed-title">Completed Projects</span>
       <div class="completed-grid">
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'PetSaver' })}>
+            <img class="completed-img" alt="" src="/img/petsaver-img.jpeg" />
+            <div class="completed-overlay">
+              <div class="completed-text">
+                PetSaver
+                <br />
+                Personal Savings App for UX Design Student Project
+              </div>
+            </div>
+          </a>
+        </div>
         <div class="completed-cell">
           <a href={$url('/projects/cull1')}>
             <img class="completed-img" alt="" src="/img/cullinary-gif.gif" />
