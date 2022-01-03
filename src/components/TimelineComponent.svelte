@@ -1,5 +1,37 @@
+<script lang="ts">
+  import { onDestroy, onMount } from 'svelte';
+
+  let sectionNodes: NodeListOf<HTMLElement>;
+  let sectionObserver: IntersectionObserver;
+
+  onMount(() => {
+    sectionObserver = new IntersectionObserver(
+      (entries: IntersectionObserverEntry[]) => {
+        const allVisibleSections: IntersectionObserverEntry[] = entries.filter((entry: IntersectionObserverEntry) => entry.isIntersecting);
+        if (allVisibleSections.length === 0) {
+          return;
+        }
+        allVisibleSections.forEach((container: IntersectionObserverEntry) => {
+          if (container.target.id === 'slide-left') {
+            container.target.classList.add('timeline-slide-left');
+          } else if (container.target.id === 'slide-right') {
+            container.target.classList.add('timeline-slide-right');
+          }
+        });
+      },
+      { threshold: 0.05 },
+    );
+    sectionNodes = document.querySelectorAll('.timeline-container');
+    sectionNodes.forEach((section: HTMLElement) => sectionObserver.observe(section));
+  });
+
+  onDestroy(() => {
+    sectionNodes.forEach((section: Element) => sectionObserver.unobserve(section));
+  });
+</script>
+
 <div class="timeline-div">
-  <div class="timeline-container left">
+  <div class="timeline-container left" id="slide-left">
     <div class="timeline-content">
       <span class="timeline-title">Began College</span>
       <div class="timeline-divider" />
@@ -7,7 +39,7 @@
       <span class="timeline-text">Matriculated as a Computer Science Major in 2018 at the National University of Singapore (NUS).</span>
     </div>
   </div>
-  <div class="timeline-container right">
+  <div class="timeline-container right" id="slide-right">
     <div class="timeline-content">
       <span class="timeline-title">WaveScan Technologies Pte. Ltd</span>
       <span class="timeline-designation">UI/UX Developer Intern</span>
@@ -30,7 +62,7 @@
       </span>
     </div>
   </div>
-  <div class="timeline-container left">
+  <div class="timeline-container left" id="slide-left">
     <div class="timeline-content">
       <span class="timeline-title">STUCK Design</span>
       <span class="timeline-designation">Full Stack Developer Intern</span>
@@ -48,7 +80,7 @@
       </span>
     </div>
   </div>
-  <div class="timeline-container right">
+  <div class="timeline-container right" id="slide-right">
     <div class="timeline-content">
       <span class="timeline-title">Graduation (Pending)</span>
       <div class="timeline-divider" />
@@ -179,6 +211,22 @@
     padding-inline-start: 1.5em;
   }
 
+  :global(.timeline-slide-left) {
+    -webkit-animation: slidefromleft 2s;
+    -moz-animation: slidefromleft 2s;
+    -ms-animation: slidefromleft 2s;
+    -o-animation: slidefromleft 2s;
+    animation: slidefromleft 2s;
+  }
+
+  :global(.timeline-slide-right) {
+    -webkit-animation: slidefromright 2s;
+    -moz-animation: slidefromright 2s;
+    -ms-animation: slidefromright 2s;
+    -o-animation: slidefromright 2s;
+    animation: slidefromright 2s;
+  }
+
   @media screen and (max-width: 600px) {
     .timeline-div {
       max-width: 85vw;
@@ -188,6 +236,14 @@
   @media screen and (max-width: 800px) {
     .timeline-div::after {
       left: 31px;
+    }
+
+    :global(.timeline-slide-left) {
+      -webkit-animation: slidefromright 2s;
+      -moz-animation: slidefromright 2s;
+      -ms-animation: slidefromright 2s;
+      -o-animation: slidefromright 2s;
+      animation: slidefromright 2s;
     }
 
     .timeline-container {
@@ -214,6 +270,116 @@
 
     .right {
       left: 0%;
+    }
+  }
+
+  @keyframes slidefromleft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-o-keyframes slidefromleft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-ms-keyframes slidefromleft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-webkit-keyframes slidefromleft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-moz-keyframes slidefromleft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slidefromright {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-o-keyframes slidefromright {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-ms-keyframes slidefromright {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-webkit-keyframes slidefromright {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @-moz-keyframes slidefromright {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
     }
   }
 </style>

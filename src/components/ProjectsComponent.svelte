@@ -1,5 +1,32 @@
 <script lang="ts">
   import { url } from '@roxi/routify';
+  import { onDestroy, onMount } from 'svelte';
+
+  let sectionNodes: NodeListOf<HTMLElement>;
+  let sectionObserver: IntersectionObserver;
+
+  /*
+  onMount(() => {
+    sectionObserver = new IntersectionObserver(
+      (entries: IntersectionObserverEntry[]) => {
+        const allVisibleSections: IntersectionObserverEntry[] = entries.filter((entry: IntersectionObserverEntry) => entry.isIntersecting);
+        if (allVisibleSections.length === 0) {
+          return;
+        }
+        allVisibleSections.forEach((container: IntersectionObserverEntry) => {
+          container.target.classList.add('project-div-anim');
+        });
+      },
+      { threshold: 0.01 },
+    );
+    sectionNodes = document.querySelectorAll('.project-div');
+    sectionNodes.forEach((section: HTMLElement) => sectionObserver.observe(section));
+  });
+
+  onDestroy(() => {
+    sectionNodes.forEach((section: HTMLElement) => sectionObserver.unobserve(section));
+  });
+  */
 </script>
 
 <div class="project-div">
@@ -91,6 +118,14 @@
     margin: 2em 20%;
   }
 
+  :global(.project-div-anim) {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+  }
+
   .project-section {
     display: flex;
     flex-direction: column;
@@ -178,6 +213,51 @@
     }
     .project-section {
       align-items: center;
+    }
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 </style>
