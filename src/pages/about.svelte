@@ -18,11 +18,11 @@
 
   onMount(() => {
     sectionObserver = new IntersectionObserver(
-      (entries) => {
-        document.querySelectorAll('.about-nav-link').forEach((navLink) => {
+      (entries: IntersectionObserverEntry[]) => {
+        document.querySelectorAll('.about-nav-link').forEach((navLink: Element) => {
           navLink.classList.remove('link-circle-selected');
         });
-        const allVisibleSections: IntersectionObserverEntry[] = entries.filter((entry) => entry.isIntersecting);
+        const allVisibleSections: IntersectionObserverEntry[] = entries.filter((entry: IntersectionObserverEntry) => entry.isIntersecting);
         if (allVisibleSections.length === 0) {
           return;
         }
@@ -39,11 +39,11 @@
       { threshold: 0.5 },
     );
     sectionNodes = document.querySelectorAll('.about-section');
-    sectionNodes.forEach((section) => sectionObserver.observe(section));
+    sectionNodes.forEach((section: Element) => sectionObserver.observe(section));
   });
 
   onDestroy(() => {
-    sectionNodes.forEach((section) => sectionObserver.unobserve(section));
+    sectionNodes.forEach((section: Element) => sectionObserver.unobserve(section));
   });
 </script>
 
