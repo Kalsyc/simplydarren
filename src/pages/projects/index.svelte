@@ -1,16 +1,29 @@
 <script lang="ts">
   import HeaderComponent from '../../components/HeaderComponent.svelte';
   import FooterComponent from '../../components/FooterComponent.svelte';
-  import Test from '../../markdown/Test.md';
   import { url, metatags } from '@roxi/routify';
+  import { onMount } from 'svelte';
 
-  metatags.title = 'Projects';
+  metatags.title = 'Simply Darren | Projects';
+
+  const importMarkdown = async () => {
+    return await import(`../../markdown/Test.md`);
+  };
+
+  let text;
+
+  onMount(() => {
+    importMarkdown().then((res) => {
+      text = res.default;
+    });
+  });
 </script>
 
 <main>
   <HeaderComponent />
   <div class="project-main-div">
-    <Test />
+    <svelte:component this={text} />
+
     <span class="project-title-div">Coming Soon :)</span>
     <a class="cullinary-link" href={$url('/projects/cull1')}>Click here to play CULLinary</a>
     <a class="cullinary-link" href={$url('/projects/cull2')}>Click here to play CULLinary2</a>
