@@ -9,7 +9,14 @@
   metatags.title = 'Simply Darren | ' + projectName;
 
   const importMarkdown = async () => {
-    return await import(`../../markdown/PetSaver.md`);
+    switch (projectName) {
+      case 'PetSaver':
+        return await import(`../../markdown/PetSaver.md`);
+      case 'ProjectKampong':
+        return await import(`../../markdown/ProjectKampong.md`);
+      default:
+        return await import(`../../markdown/Error.md`);
+    }
   };
 
   onMount(() => {

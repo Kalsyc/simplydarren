@@ -26,6 +26,30 @@
           </a>
         </div>
         <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'ProjectKampong' })}>
+            <img class="completed-img" alt="" src="/img/kampong-img.png" />
+            <div class="completed-overlay">
+              <div class="completed-text">
+                Project Kampong
+                <br />
+                An online collaborative platform for the Social Sector
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'DigitalKampung' })}>
+            <img class="completed-img" alt="" src="/img/digitalkampung-img.png" />
+            <div class="completed-overlay">
+              <div class="completed-text">
+                Digital Kampung
+                <br />
+                Search, Review and Rate Hawker stalls across Singapore!
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
           <a href={$url('/projects/cull1')}>
             <img class="completed-img" alt="" src="/img/cullinary-gif.gif" />
             <div class="completed-overlay">
@@ -45,6 +69,18 @@
                 CULLinary2
                 <br />
                 Student Game Project, 1st Place at 19th iSTePS
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'SafeSpace' })}>
+            <img class="completed-img" alt="" src="/img/safespace-img.png" />
+            <div class="completed-overlay">
+              <div class="completed-text">
+                SafeSpace
+                <br />
+                VR Mental Health Simulator and Meditation Guide
               </div>
             </div>
           </a>
