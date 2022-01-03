@@ -127,7 +127,7 @@
   .completed-img {
     display: block;
     height: 225px;
-    width: 425px;
+    width: 400px;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 1em;
@@ -170,7 +170,7 @@
   .projects-ongoing {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin: 1em 10%;
   }
@@ -181,5 +181,24 @@
     font-size: 2rem;
     font-weight: 500;
     margin: 5px 0;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .completed-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .completed-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .completed-img {
+      height: 40vw;
+      width: 80vw;
+    }
   }
 </style>
