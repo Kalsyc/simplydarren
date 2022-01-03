@@ -7,6 +7,7 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 
+const { markdown } = require('svelte-preprocess-markdown');
 const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
@@ -41,7 +42,8 @@ export default {
   },
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({ sourceMap: !production }),
+      preprocess: [sveltePreprocess({ sourceMap: !production }), markdown()],
+      extensions: ['.svelte', '.md'],
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,

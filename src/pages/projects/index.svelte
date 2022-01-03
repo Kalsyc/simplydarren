@@ -1,6 +1,7 @@
 <script lang="ts">
   import HeaderComponent from '../../components/HeaderComponent.svelte';
   import FooterComponent from '../../components/FooterComponent.svelte';
+  import Test from '../../markdown/Test.md';
   import { url, metatags } from '@roxi/routify';
 
   metatags.title = 'Projects';
@@ -9,6 +10,7 @@
 <main>
   <HeaderComponent />
   <div class="project-main-div">
+    <Test />
     <span class="project-title-div">Coming Soon :)</span>
     <a class="cullinary-link" href={$url('/projects/cull1')}>Click here to play CULLinary</a>
     <a class="cullinary-link" href={$url('/projects/cull2')}>Click here to play CULLinary2</a>
