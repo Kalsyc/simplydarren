@@ -60,7 +60,7 @@
           <strong>Tech Stack: Unity</strong>
         </span>
       </div>
-      <img class="project-img" alt="" src="/img/cullinary-img.png" />
+      <img class="project-img" alt="" src="/img/cullinary2-img.png" />
     </div>
     <div class="project-links">
       <a class="project-button" href={$url('/projects')}>About Project</a>

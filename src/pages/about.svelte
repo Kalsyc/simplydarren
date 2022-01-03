@@ -10,7 +10,7 @@
   import ProjectsComponent from '../components/ProjectsComponent.svelte';
   import ContactComponent from '../components/ContactComponent.svelte';
 
-  metatags.title = 'About';
+  metatags.title = 'Simply Darren | About';
 
   let currentNav: string = 'bio';
   let sectionNodes: NodeListOf<Element>;
