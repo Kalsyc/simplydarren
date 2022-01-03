@@ -3,7 +3,7 @@
   import FooterComponent from '../../components/FooterComponent.svelte';
   import { url, metatags } from '@roxi/routify';
 
-  metatags.title = 'CULLinary2';
+  metatags.title = 'Simply Darren | CULLinary2';
 </script>
 
 <main>
