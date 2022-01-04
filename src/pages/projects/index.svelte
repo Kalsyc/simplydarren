@@ -17,7 +17,7 @@
           <a href={$url('/projects/:project', { project: 'PetSaver' })}>
             <img class="completed-img" alt="" src="/img/petsaver-img.jpeg" />
             <div class="completed-overlay">
-              <div class="completed-tag">UX/UI Design</div>
+              <div class="completed-tag uiux-tag">UX/UI Design</div>
               <div class="completed-text">
                 PetSaver
                 <br />
@@ -28,9 +28,9 @@
         </div>
         <div class="completed-cell">
           <a href={$url('/projects/:project', { project: 'ProjectKampong' })}>
-            <img class="completed-img" alt="" src="/img/kampong-img.png" />
+            <img class="completed-img " alt="" src="/img/kampong-img.png" />
             <div class="completed-overlay">
-              <div class="completed-tag">Web Dev</div>
+              <div class="completed-tag webdev-tag ">Web Dev</div>
               <div class="completed-text">
                 Project Kampong
                 <br />
@@ -43,7 +43,7 @@
           <a href={$url('/projects/:project', { project: 'DigitalKampung' })}>
             <img class="completed-img" alt="" src="/img/digitalkampung-img.png" />
             <div class="completed-overlay">
-              <div class="completed-tag">Web Dev</div>
+              <div class="completed-tag webdev-tag">Web Dev</div>
               <div class="completed-text">
                 Digital Kampung
                 <br />
@@ -56,7 +56,7 @@
           <a href={$url('/projects/cull1')}>
             <img class="completed-img" alt="" src="/img/cullinary-gif.gif" />
             <div class="completed-overlay">
-              <div class="completed-tag">Game Dev</div>
+              <div class="completed-tag gamedev-tag">Game Dev</div>
               <div class="completed-text">
                 CULLinary
                 <br />
@@ -68,8 +68,8 @@
         <div class="completed-cell">
           <a href={$url('/projects/cull2')}>
             <img class="completed-img" alt="" src="/img/cullinary2-gif.gif" />
-            <div class="completed-overlay">
-              <div class="completed-tag">Game Dev</div>
+            <div class="completed-overlay ">
+              <div class="completed-tag gamedev-tag">Game Dev</div>
               <div class="completed-text">
                 CULLinary2
                 <br />
@@ -82,7 +82,7 @@
           <a href={$url('/projects/:project', { project: 'SafeSpace' })}>
             <img class="completed-img" alt="" src="/img/safespace-img.png" />
             <div class="completed-overlay">
-              <div class="completed-tag">Virtual Reality</div>
+              <div class="completed-tag vr-tag">Virtual Reality</div>
               <div class="completed-text">
                 SafeSpace
                 <br />
@@ -94,8 +94,8 @@
         <div class="completed-cell">
           <a href={$url('/projects/:project', { project: 'Xpire' })}>
             <img class="completed-img" alt="" src="/img/xpire-img.png" />
-            <div class="completed-overlay">
-              <div class="completed-tag">App Dev</div>
+            <div class="completed-overlay ">
+              <div class="completed-tag appdev-tag">App Dev</div>
               <div class="completed-text">
                 Xpire
                 <br />
@@ -108,7 +108,7 @@
           <a href={$url('/projects/:project', { project: 'CanMakan' })}>
             <img class="completed-img" alt="" src="/img/canmakan.jpg" />
             <div class="completed-overlay">
-              <div class="completed-tag">Web Dev</div>
+              <div class="completed-tag webdev-tag">Web Dev</div>
               <div class="completed-text">
                 CanMakan
                 <br />
@@ -127,7 +127,7 @@
           <a href={$url('/projects/:project', { project: 'Yobu' })}>
             <img class="completed-img" alt="" src="/img/yobu.jpg" />
             <div class="completed-overlay">
-              <div class="completed-tag">Web Dev</div>
+              <div class="completed-tag webdev-tag">Web Dev</div>
               <div class="completed-text">
                 Yobu
                 <br />
@@ -140,7 +140,7 @@
           <a href={$url('/projects/:project', { project: 'SayNoToUILibraries' })}>
             <img class="completed-img" alt="" src="/img/saynotouilibraries.jpg" />
             <div class="completed-overlay">
-              <div class="completed-tag">Web Dev</div>
+              <div class="completed-tag webdev-tag">Web Dev</div>
               <div class="completed-text">
                 SayNoToUILibraries
                 <br />
@@ -213,8 +213,27 @@
     color: white;
     font-weight: 700;
     border-radius: 10px;
-    background-color: #e87121;
     padding: 0 0.5em;
+  }
+
+  .webdev-tag {
+    background-color: #26a400;
+  }
+
+  .uiux-tag {
+    background-color: #e87121;
+  }
+
+  .gamedev-tag {
+    background-color: #0118e2;
+  }
+
+  .appdev-tag {
+    background-color: #e70013;
+  }
+
+  .vr-tag {
+    background-color: #7000ad;
   }
 
   .completed-text {
