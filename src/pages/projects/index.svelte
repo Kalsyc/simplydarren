@@ -17,6 +17,7 @@
           <a href={$url('/projects/:project', { project: 'PetSaver' })}>
             <img class="completed-img" alt="" src="/img/petsaver-img.jpeg" />
             <div class="completed-overlay">
+              <div class="completed-tag uiux-tag">UX/UI Design</div>
               <div class="completed-text">
                 PetSaver
                 <br />
@@ -27,8 +28,9 @@
         </div>
         <div class="completed-cell">
           <a href={$url('/projects/:project', { project: 'ProjectKampong' })}>
-            <img class="completed-img" alt="" src="/img/kampong-img.png" />
+            <img class="completed-img " alt="" src="/img/kampong-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag webdev-tag ">Web Dev</div>
               <div class="completed-text">
                 Project Kampong
                 <br />
@@ -41,6 +43,7 @@
           <a href={$url('/projects/:project', { project: 'DigitalKampung' })}>
             <img class="completed-img" alt="" src="/img/digitalkampung-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag webdev-tag">Web Dev</div>
               <div class="completed-text">
                 Digital Kampung
                 <br />
@@ -53,6 +56,7 @@
           <a href={$url('/projects/cull1')}>
             <img class="completed-img" alt="" src="/img/cullinary-gif.gif" />
             <div class="completed-overlay">
+              <div class="completed-tag gamedev-tag">Game Dev</div>
               <div class="completed-text">
                 CULLinary
                 <br />
@@ -64,7 +68,8 @@
         <div class="completed-cell">
           <a href={$url('/projects/cull2')}>
             <img class="completed-img" alt="" src="/img/cullinary2-gif.gif" />
-            <div class="completed-overlay">
+            <div class="completed-overlay ">
+              <div class="completed-tag gamedev-tag">Game Dev</div>
               <div class="completed-text">
                 CULLinary2
                 <br />
@@ -77,6 +82,7 @@
           <a href={$url('/projects/:project', { project: 'SafeSpace' })}>
             <img class="completed-img" alt="" src="/img/safespace-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag vr-tag">Virtual Reality</div>
               <div class="completed-text">
                 SafeSpace
                 <br />
@@ -85,13 +91,66 @@
             </div>
           </a>
         </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'Xpire' })}>
+            <img class="completed-img" alt="" src="/img/xpire-img.png" />
+            <div class="completed-overlay ">
+              <div class="completed-tag appdev-tag">App Dev</div>
+              <div class="completed-text">
+                Xpire
+                <br />
+                Desktop Expiry Date Tracker Application written in Java
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'CanMakan' })}>
+            <img class="completed-img" alt="" src="/img/canmakan.jpg" />
+            <div class="completed-overlay">
+              <div class="completed-tag webdev-tag">Web Dev</div>
+              <div class="completed-text">
+                CanMakan
+                <br />
+                Website that checks dine-in rules for vaccinated people
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-    <!--
+
     <div class="projects-ongoing">
       <span class="ongoing-title">Ongoing Projects</span>
+      <div class="completed-grid">
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'Yobu' })}>
+            <img class="completed-img" alt="" src="/img/yobu.jpg" />
+            <div class="completed-overlay">
+              <div class="completed-tag webdev-tag">Web Dev</div>
+              <div class="completed-text">
+                Yobu
+                <br />
+                Social Gaming Platform - The newest way to connect
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'SayNoToUILibraries' })}>
+            <img class="completed-img" alt="" src="/img/saynotouilibraries.jpg" />
+            <div class="completed-overlay">
+              <div class="completed-tag webdev-tag">Web Dev</div>
+              <div class="completed-text">
+                SayNoToUILibraries
+                <br />
+                Houses all my Frontend Components and UI Elements
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-    -->
   </div>
   <FooterComponent />
 </main>
@@ -147,6 +206,36 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .completed-tag {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0 0.5em;
+  }
+
+  .webdev-tag {
+    background-color: #26a400;
+  }
+
+  .uiux-tag {
+    background-color: #e87121;
+  }
+
+  .gamedev-tag {
+    background-color: #0118e2;
+  }
+
+  .appdev-tag {
+    background-color: #e70013;
+  }
+
+  .vr-tag {
+    background-color: #7000ad;
+  }
+
   .completed-text {
     width: auto;
     height: 100%;
@@ -156,6 +245,7 @@
     color: white;
     font-weight: 700;
     font-size: 1.25rem;
+    padding: 0 1em;
   }
 
   .completed-title,
@@ -193,12 +283,39 @@
     .completed-grid {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    .completed-overlay {
+      top: 50%;
+      height: 50%;
+      opacity: 1;
+    }
+
+    .completed-text {
+      text-align: left;
+      font-size: 1rem;
+      justify-content: flex-start;
+    }
   }
 
   @media screen and (max-width: 600px) {
     .completed-img {
       height: 40vw;
       width: 80vw;
+    }
+    .completed-tag {
+      position: relative;
+      text-align: left;
+      max-width: 35%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .completed-text,
+    .completed-tag {
+      font-size: 0.75rem;
     }
   }
 </style>
