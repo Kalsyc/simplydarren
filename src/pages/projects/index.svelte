@@ -85,13 +85,36 @@
             </div>
           </a>
         </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'Xpire' })}>
+            <img class="completed-img" alt="" src="/img/xpire-img.png" />
+            <div class="completed-overlay">
+              <div class="completed-text">
+                Xpire
+                <br />
+                Desktop Expiry Date Tracker Application written in Java
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'CanMakan' })}>
+            <img class="completed-img" alt="" src="/img/canmakan.jpg" />
+            <div class="completed-overlay">
+              <div class="completed-text">
+                CanMakan
+                <br />
+                Website that checks dine-in rules for vaccinated people
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-    <!--
+
     <div class="projects-ongoing">
       <span class="ongoing-title">Ongoing Projects</span>
     </div>
-    -->
   </div>
   <FooterComponent />
 </main>
@@ -156,6 +179,7 @@
     color: white;
     font-weight: 700;
     font-size: 1.25rem;
+    padding: 0 1em;
   }
 
   .completed-title,
@@ -192,6 +216,18 @@
   @media screen and (max-width: 900px) {
     .completed-grid {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .completed-overlay {
+      top: 50%;
+      height: 50%;
+      opacity: 1;
+    }
+
+    .completed-text {
+      text-align: left;
+      font-size: 1rem;
+      justify-content: flex-start;
     }
   }
 
