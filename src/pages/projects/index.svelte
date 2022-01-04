@@ -17,6 +17,7 @@
           <a href={$url('/projects/:project', { project: 'PetSaver' })}>
             <img class="completed-img" alt="" src="/img/petsaver-img.jpeg" />
             <div class="completed-overlay">
+              <div class="completed-tag">UX/UI Design</div>
               <div class="completed-text">
                 PetSaver
                 <br />
@@ -29,6 +30,7 @@
           <a href={$url('/projects/:project', { project: 'ProjectKampong' })}>
             <img class="completed-img" alt="" src="/img/kampong-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag">Web Dev</div>
               <div class="completed-text">
                 Project Kampong
                 <br />
@@ -41,6 +43,7 @@
           <a href={$url('/projects/:project', { project: 'DigitalKampung' })}>
             <img class="completed-img" alt="" src="/img/digitalkampung-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag">Web Dev</div>
               <div class="completed-text">
                 Digital Kampung
                 <br />
@@ -53,6 +56,7 @@
           <a href={$url('/projects/cull1')}>
             <img class="completed-img" alt="" src="/img/cullinary-gif.gif" />
             <div class="completed-overlay">
+              <div class="completed-tag">Game Dev</div>
               <div class="completed-text">
                 CULLinary
                 <br />
@@ -65,6 +69,7 @@
           <a href={$url('/projects/cull2')}>
             <img class="completed-img" alt="" src="/img/cullinary2-gif.gif" />
             <div class="completed-overlay">
+              <div class="completed-tag">Game Dev</div>
               <div class="completed-text">
                 CULLinary2
                 <br />
@@ -77,6 +82,7 @@
           <a href={$url('/projects/:project', { project: 'SafeSpace' })}>
             <img class="completed-img" alt="" src="/img/safespace-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag">Virtual Reality</div>
               <div class="completed-text">
                 SafeSpace
                 <br />
@@ -89,6 +95,7 @@
           <a href={$url('/projects/:project', { project: 'Xpire' })}>
             <img class="completed-img" alt="" src="/img/xpire-img.png" />
             <div class="completed-overlay">
+              <div class="completed-tag">App Dev</div>
               <div class="completed-text">
                 Xpire
                 <br />
@@ -101,6 +108,7 @@
           <a href={$url('/projects/:project', { project: 'CanMakan' })}>
             <img class="completed-img" alt="" src="/img/canmakan.jpg" />
             <div class="completed-overlay">
+              <div class="completed-tag">Web Dev</div>
               <div class="completed-text">
                 CanMakan
                 <br />
@@ -114,6 +122,34 @@
 
     <div class="projects-ongoing">
       <span class="ongoing-title">Ongoing Projects</span>
+      <div class="completed-grid">
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'Yobu' })}>
+            <img class="completed-img" alt="" src="/img/yobu.jpg" />
+            <div class="completed-overlay">
+              <div class="completed-tag">Web Dev</div>
+              <div class="completed-text">
+                Yobu
+                <br />
+                Social Gaming Platform - The newest way to connect
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="completed-cell">
+          <a href={$url('/projects/:project', { project: 'SayNoToUILibraries' })}>
+            <img class="completed-img" alt="" src="/img/saynotouilibraries.jpg" />
+            <div class="completed-overlay">
+              <div class="completed-tag">Web Dev</div>
+              <div class="completed-text">
+                SayNoToUILibraries
+                <br />
+                Houses all my Frontend Components and UI Elements
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <FooterComponent />
@@ -168,6 +204,17 @@
     opacity: 0;
     transition: 0.3s ease-in;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .completed-tag {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #e87121;
+    padding: 0 0.5em;
   }
 
   .completed-text {
@@ -235,6 +282,21 @@
     .completed-img {
       height: 40vw;
       width: 80vw;
+    }
+    .completed-tag {
+      position: relative;
+      text-align: left;
+      max-width: 35%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .completed-text,
+    .completed-tag {
+      font-size: 0.75rem;
     }
   }
 </style>
