@@ -3,20 +3,20 @@
 <h2 align="center">Dungeon Crawler and Restaurant Simulator</h2>
 
 <p align="center">
-  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/projects/cullinary-gif.gif" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/projects/cullinary-gif.gif" width="90%" height="auto" />
 </p>
 
 ## Preface
 
-CULLinary is a student game project from the module CS3247: Game Development @ National University of Singapore (NUS). I took this module in AY20/21 Semester 2 under Prof Anand Bhojan. This page features some of my team's (Team Angry Eggplant) notes from my perspective. Feel free to read or...
+CULLinary is a student game project from the module CS3247: Game Development @ National University of Singapore (NUS). I took this module in AY20/21 Semester 2 under Prof Anand Bhojan. This page features some of my team's (Team Angry Eggplant) notes from my perspective (when I am free enough to write). Feel free to read or...
 
 [Play the game right away here on your browser](https://www.simplydarren.com/projects/cull1)
 
-[Or download the game from here](https://github.com/AngryEggplantStudios/CULLinary/releases/tag/v1.4)
-
-_Note that the game can only be played on modern browsers on your desktop such as Chrome/Safari/Firefox_
+_Note that the game can only be played on modern browsers on your desktop such as Chrome/Safari/Firefox._
 
 _The game on the browser is also not tested due to the laziness of this happy but exhausted developer and you may experience unexpected crashes. I recommend you to download the original executable from our GitHub releases instead if you wish to have a crash-free experience!_
+
+[Or download the game from here](https://github.com/AngryEggplantStudios/CULLinary/releases/tag/v1.4)
 
 [Or watch our trailer first!](https://www.youtube.com/watch?v=SKpQ_maMmHE)
 
@@ -33,6 +33,8 @@ You are an owner of a humble restaurant in your hometown. Recently, chemical was
 As a result, the number of visitors to the town is declining rapidly, running your restaurant out of business. Now your job is to kill off the monsters, grow your restaurant so that you can attract visitors back to your town and make it great again!
 
 ## Development Notes
+
+**_To be updated_**
 
 <p align="center">
   <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/projects/cullinary/combat.gif" width="90%" height="auto" />
