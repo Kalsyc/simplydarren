@@ -30,7 +30,7 @@
     <span class="intro-item intro-based-span">Based in Singapore</span>
   </div>
   <div class="main-brief-div">
-    <div class="main-img-div"><img class="main-img" alt="" src="/img/face.jpg" /></div>
+    <div class="main-img-div"><img class="main-img" alt="" src="/img/about/face.jpg" /></div>
     <div class="main-short-div">
       Hey there! I'm Darren Sim, a Final Year Computer Science Major at National University of Singapore (NUS).
       <br /><br />

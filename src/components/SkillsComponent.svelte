@@ -2,70 +2,70 @@
   <span class="skilltype-title">Framework & Tools</span>
   <div class="skills-grid">
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/react-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/react-icon.png" />
       <span class="skill-text">React</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/angular-icon.svg" />
+      <img class="skill-img" alt="" src="/img/skills/angular-icon.svg" />
       <span class="skill-text">Angular</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/svelte-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/svelte-icon.png" />
       <span class="skill-text">Svelte</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/unity-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/unity-icon.png" />
       <span class="skill-text">Unity</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/nodejs-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/nodejs-icon.png" />
       <span class="skill-text">NodeJS</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/electron-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/electron-icon.png" />
       <span class="skill-text">Electron</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/adobexd-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/adobexd-icon.png" />
       <span class="skill-text">Adobe XD</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/figma-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/figma-icon.png" />
       <span class="skill-text">Figma</span>
     </div>
   </div>
   <span class="skilltype-title">Languages</span>
   <div class="skills-grid">
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/typescript-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/typescript-icon.png" />
       <span class="skill-text">TypeScript</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/javascript-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/javascript-icon.png" />
       <span class="skill-text">JavaScript</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/python-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/python-icon.png" />
       <span class="skill-text">Python</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/csharp-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/csharp-icon.png" />
       <span class="skill-text">C#</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/html-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/html-icon.png" />
       <span class="skill-text">HTML5</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/css-icon.jpeg" />
+      <img class="skill-img" alt="" src="/img/skills/css-icon.jpeg" />
       <span class="skill-text">CSS3</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/postgresql-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/postgresql-icon.png" />
       <span class="skill-text">PostgreSQL</span>
     </div>
     <div class="skill-cell">
-      <img class="skill-img" alt="" src="/img/java-icon.png" />
+      <img class="skill-img" alt="" src="/img/skills/java-icon.png" />
       <span class="skill-text">Java</span>
     </div>
   </div>

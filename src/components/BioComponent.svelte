@@ -1,5 +1,5 @@
 <div class="bio-div">
-  <img class="about-bio-img" alt="" src="/img/about-bio.jpg" />
+  <img class="about-bio-img" alt="" src="/img/about/about-bio.jpg" />
   <div class="about-bio-text-div">
     <span class="about-bio-text">
       Born in 1997 in Singapore, Darren Sim is currently a Final Year Computer Science Major at the National University of Singapore (NUS). His main

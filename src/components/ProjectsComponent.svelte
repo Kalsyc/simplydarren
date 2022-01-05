@@ -41,7 +41,7 @@
           <strong>Tech Stack: React, Express, PostgreSQL, NodeJS</strong>
         </span>
       </div>
-      <img class="project-img" alt="" src="/img/digitalkampung-img.png" />
+      <img class="project-img" alt="" src="/img/projects/digitalkampung-img.png" />
     </div>
     <div class="project-links">
       <a class="project-button" href={$url('/projects')}>About Project</a>
@@ -60,7 +60,7 @@
           <strong>Tech Stack: Unity</strong>
         </span>
       </div>
-      <img class="project-img" alt="" src="/img/cullinary2-img.png" />
+      <img class="project-img" alt="" src="/img/projects/cullinary2-img.png" />
     </div>
     <div class="project-links">
       <a class="project-button" href={$url('/projects')}>About Project</a>
@@ -81,7 +81,7 @@
           <strong>Tech Stack: Angular, NestJS, GraphQL, MongoDB</strong>
         </span>
       </div>
-      <img class="project-img" alt="" src="/img/kampong-img.png" />
+      <img class="project-img" alt="" src="/img/projects/kampong-img.png" />
     </div>
     <div class="project-links">
       <a class="project-button" href={$url('/projects')}>About Project</a>
@@ -100,7 +100,7 @@
           <strong>Tech Stack: Unity, SRanipal, TobiiXR SDKs </strong>
         </span>
       </div>
-      <img class="project-img" alt="" src="/img/safespace-img.png" />
+      <img class="project-img" alt="" src="/img/projects/safespace-img.png" />
     </div>
     <div class="project-links">
       <a class="project-button" href={$url('/projects')}>About Project</a>

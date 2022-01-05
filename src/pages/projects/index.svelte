@@ -17,7 +17,7 @@
         <ProjectCellComponent
           projectType="uiux"
           projectParam="PetSaver"
-          projectImgPath="/img/petsaver-img.jpeg"
+          projectImgPath="/img/projects/petsaver-img.jpeg"
           projectTitle="PetSaver"
           projectDesc="Personal Savings App for UX Design Project"
           projectTag="UI/UX Design"
@@ -25,7 +25,7 @@
         <ProjectCellComponent
           projectType="webdev"
           projectParam="ProjectKampong"
-          projectImgPath="/img/kampong-img.png"
+          projectImgPath="/img/projects/kampong-img.png"
           projectTitle="Project Kampong"
           projectDesc="Online Collaborative platform for Social Sector"
           projectTag="Web Dev"
@@ -33,7 +33,7 @@
         <ProjectCellComponent
           projectType="webdev"
           projectParam="DigitalKampung"
-          projectImgPath="/img/digitalkampung-img.png"
+          projectImgPath="/img/projects/digitalkampung-img.png"
           projectTitle="Digital Kampung"
           projectDesc="Rate, Review and Search Hawkers in Singapore"
           projectTag="Web Dev"
@@ -41,7 +41,7 @@
         <ProjectCellComponent
           projectType="gamedev"
           projectParam="CULLinary"
-          projectImgPath="/img/cullinary-gif.gif"
+          projectImgPath="/img/projects/cullinary-gif.gif"
           projectTitle="CULLinary"
           projectDesc="Dungeon Crawler and Restaurant Simulator"
           projectTag="Game Dev"
@@ -49,7 +49,7 @@
         <ProjectCellComponent
           projectType="gamedev"
           projectParam="CULLinary2"
-          projectImgPath="/img/cullinary2-gif.gif"
+          projectImgPath="/img/projects/cullinary2-gif.gif"
           projectTitle="CULLinary2"
           projectDesc="Dungeon Crawler and Delivery Simulator"
           projectTag="Game Dev"
@@ -57,7 +57,7 @@
         <ProjectCellComponent
           projectType="vr"
           projectParam="SafeSpace"
-          projectImgPath="/img/safespace-img.png"
+          projectImgPath="/img/projects/safespace-img.png"
           projectTitle="SafeSpace"
           projectDesc="VR Mental Health Simulator and Meditation Guide"
           projectTag="Virtual Reality"
@@ -65,7 +65,7 @@
         <ProjectCellComponent
           projectType="appdev"
           projectParam="Xpire"
-          projectImgPath="/img/xpire-img.png"
+          projectImgPath="/img/projects/xpire-img.png"
           projectTitle="Xpire"
           projectDesc="Desktop Expiry Date Tracker Application"
           projectTag="App Dev"
@@ -73,7 +73,7 @@
         <ProjectCellComponent
           projectType="webdev"
           projectParam="CanMakan"
-          projectImgPath="/img/canmakan.jpg"
+          projectImgPath="/img/projects/canmakan.jpg"
           projectTitle="CanMakan"
           projectDesc="Dine-in Rules Checker"
           projectTag="Web Dev"
@@ -87,7 +87,7 @@
         <ProjectCellComponent
           projectType="webdev"
           projectParam="Yobu"
-          projectImgPath="/img/yobu.jpg"
+          projectImgPath="/img/projects/yobu.jpg"
           projectTitle="Yobu"
           projectDesc="Social Gaming Platform - The newest way to connect"
           projectTag="Web Dev"
@@ -95,7 +95,7 @@
         <ProjectCellComponent
           projectType="webdev"
           projectParam="SayNoToUILibraries"
-          projectImgPath="/img/saynotouilibraries.jpg"
+          projectImgPath="/img/projects/saynotouilibraries.jpg"
           projectTitle="SayNoToUILibraries"
           projectDesc="UI Component Reference & Storage"
           projectTag="Web Dev"
