@@ -18,6 +18,10 @@
         return await import(`../../markdown/ProjectKampong.md`);
       case 'DigitalKampung':
         return await import(`../../markdown/DigitalKampung.md`);
+      case 'CULLinary':
+        return await import(`../../markdown/CULLinary.md`);
+      case 'CULLinary2':
+        return await import(`../../markdown/CULLinary2.md`);
       default:
         return await import(`../../markdown/Error.md`);
     }
