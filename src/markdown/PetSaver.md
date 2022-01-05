@@ -160,12 +160,10 @@ We then had a last round of evaluation to determine what further changes can be 
 
 [Check out the Final Prototype!](https://www.figma.com/proto/t4xCdlNXbTZZgaFvollWTr/CS3240-PetSaver-2019?node-id=15%3A59&scaling=scale-down)
 
+[PetSaver Promo Video](https://www.youtube.com/watch?v=U7QycrOnMk4)
+
 ## Conclusion
 
 To summarize, doing such a comprehensive user study helps us gain a better understanding of how people go about performing tasks and achieving goals that are important to them. This includes figuring out their pain points and things that they appreciate with regard to saving money.
 
 After the user study is done, we then move on to the prototyping process where we ascertain the users’ needs. From there, we were able to gather even more feedback to fix what was wrong and to keep what was right by identifying gaps in design & usability.
-
-[![](https://img.youtube.com/vi/U7QycrOnMk4/0.jpg)](https://www.youtube.com/watch?v=U7QycrOnMk4)
-
-_PetSaver Promo Video_
