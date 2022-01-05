@@ -3,12 +3,16 @@
 <h2 align="center">CS3240 Interaction Design Project</h2>
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/projects/petsaver-img.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/projects/petsaver-img.jpeg" width="90%" height="auto" />
 </p>
+
+## Preface
+
+PetSaver is a student project from the module CS3240: Interaction Design @ National University of Singapore (NUS). I took this module in AY19/20 Semester 1 under Prof Bimlesh. This page showcases my group's final project through its various iterations and design lifecycle.
 
 ## Problem Statement
 
-We decided to focus on youth with regards to personal finances and noticed the following main problems:
+We noticed the following problems amongst youths with regards to personal finances:
 
 1. Financial literacy not formally taught
 2. Lack of savings among millenials
@@ -23,7 +27,7 @@ Hence, our solution, PetSaver, will help to instill that discipline by gamifying
 ## User Study
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/projects/petsaver/designprocess.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/projects/petsaver/designprocess.jpeg" width="90%" height="auto" />
 </p>
 
 <ins>Target Users</ins>
@@ -63,8 +67,8 @@ We also realised that not everyone has a bank account or may feel secure in lett
 We gathered our findings and organized the various ideas in our findings into groups or themes based on their relationship.
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/projects/petsaver/affinity.jpeg" width="90%" height="auto" />
-  <img style="margin: 0 auto; object-fit:fill; max-width:900px" src="/img/projects/petsaver/affinity2.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/projects/petsaver/affinity.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:900px" src="/img/projects/petsaver/affinity2.jpeg" width="90%" height="auto" />
 </p>
 
 **User Personas**
@@ -72,8 +76,8 @@ We gathered our findings and organized the various ideas in our findings into gr
 We distilled our findings and generated 2 user personas based on the common needs of our target user groups. This helped us focus on keeping the user's needs in mind.
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/projects/petsaver/persona.jpeg" width="90%" height="auto" />
-  <img style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/projects/petsaver/persona.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/projects/petsaver/persona.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/projects/petsaver/persona.jpeg" width="90%" height="auto" />
 </p>
 
 **User Scenarios**
@@ -83,8 +87,8 @@ We came up with storyboards for scenarios where the actor, Jia Yi, is able to ea
 In the second storyboard, a second actor, Brandon, is able to accessorize his virtual pet and compare his saving progress with friends on the leaderboard which encourages him to save more.
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/storyboard.jpeg" width="90%" height="auto" />
-  <img style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/projects/petsaver/storyboard2.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/storyboard.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/projects/petsaver/storyboard2.jpeg" width="90%" height="auto" />
 </p>
 
 **Key User Tasks**
@@ -107,41 +111,37 @@ To summarize, we needed to create a solution where our users are able to:
 
 **Individual prototype**
 
-Firstly, we each took on the responsibility of creating our own individual prototype as we envisioned the product to be, a mix of low-fidelity and high-fidelity prototypes. Those were given to 6 users to evaluate.
+For starters, we each created our own individual prototype based on our own representation and mental model of how the eventual application is going to be like. These prototypes, a mixture of low and high fidelity, were then given to 6 users to evaluate.
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:1000px" src="/img/projects/petsaver/individual.png" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:1000px" src="/img/projects/petsaver/individual.png" width="90%" height="auto" />
 </p>
 
-Afterwards, we did a formative evaluation with the prototypes and combined the pros and eliminate the cons from the feedback and designed one combined prototype. Thereafter, we did user testing again with more people.
+Afterwards, we did a formative evaluation with the individual prototypes in which our group discussed the pros and cons of each prototype. We then started working on how our combined prototype is going to be like and these are some of the mockups that we did.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/combined.png" width="90%" height="auto" />
+</p>
 
 **Combined Prototype**
 
-<p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/combined.png" width="90%" height="auto" />
-</p>
+After the mockups were done, we then did another round of user evaluation with more users.
 
-After the evaluation, we started working on how our mobile app will look like, and these are some of the mockups that we did.
-
-For our evaluation process, our setting was just an evaluator as well as a tester who gives tasks or guides if necessary (but try not to). We also made sure that evaluators are able to vocalise their thoughts if they choose to (Concurrent Think Aloud approach), we also asked questions after each task in order to get responses and finding out what needs to be improved in the prototype.
-
-The feedback was then gathered and we came out with a final prototype.
-
-<p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/combined2.jpeg" width="90%" height="auto" />
-</p>
-
-**Evaluation**
-
-Throughout the process, we continuously evaluated the prototypes. We did this after the individual prototypes and the combined prototype.
-
-It was a formative evaluation whereby we gathered the evaluator's immediate feedback and made appropriate changes for the next iteration.
+For our evaluation process, our setting included an evaluator as well as a tester who gives tasks or guidance when necessary. We also made sure that our users are able to vocalise their thoughts if they choose to (Concurrent Think Aloud approach). We also asked questions after each task in order to get responses and finding out what needs to be improved in the prototype.
 
 We also attempted to apply the Nielsen Heuristics to serve as a guide whereby we tried to figure out if our prototypes complied or violated the heuristics. If a certain functionality violated the heuristics, we would try to fix it. We asked the evaluators what are the features they find appealing and and keep them in the combined prototype.
 
+The feedback was then gathered and we came out with a final prototype.
+
+**Final Prototype (1st Iteration)**
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/combined2.jpeg" width="90%" height="auto" />
+</p>
+
 We then had a last round of evaluation to determine what further changes can be made.
 
-**Final Prototype**
+**Final Prototype (2nd Iteration)**
 
 <ins>**Changes made:**</ins>
 
@@ -151,21 +151,19 @@ We then had a last round of evaluation to determine what further changes can be 
 - More interaction with pet
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/final.jpeg" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/final.jpeg" width="90%" height="auto" />
 </p>
 
 <p align="center">
-  <img style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/final2.png" width="90%" height="auto" />
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/projects/petsaver/final2.png" width="90%" height="auto" />
 </p>
 
 [Check out the Final Prototype!](https://www.figma.com/proto/t4xCdlNXbTZZgaFvollWTr/CS3240-PetSaver-2019?node-id=15%3A59&scaling=scale-down)
 
+[PetSaver Promo Video](https://www.youtube.com/watch?v=U7QycrOnMk4)
+
 ## Conclusion
 
-To summarize, our user study give us a better understanding of how people go about performing tasks and achieving goals that are important to them. This includes figuring out their pain points and things that they appreciate.
+To summarize, doing such a comprehensive user study helps us gain a better understanding of how people go about performing tasks and achieving goals that are important to them. This includes figuring out their pain points and things that they appreciate with regard to saving money.
 
-Once the user study is done, we can also move on to the prototyping process. This helps us to ascertain the users’ needs. From there, we were able to gather even more feedback to fix what was wrong and to keep what was right by identifying gaps in design & usability.
-
-[![Image alt text](https://img.youtube.com/vi/U7QycrOnMk4/0.jpg)](https://www.youtube.com/watch?v=U7QycrOnMk4)
-
-_PetSaver Promo Video_
+After the user study is done, we then move on to the prototyping process where we ascertain the users’ needs. From there, we were able to gather even more feedback to fix what was wrong and to keep what was right by identifying gaps in design & usability.

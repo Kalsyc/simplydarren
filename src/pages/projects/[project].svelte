@@ -12,8 +12,8 @@
     switch (projectName) {
       case 'PetSaver':
         return await import(`../../markdown/PetSaver.md`);
-      case 'ProjectKampong':
-        return await import(`../../markdown/ProjectKampong.md`);
+      case 'SafeSpace':
+        return await import(`../../markdown/SafeSpace.md`);
       default:
         return await import(`../../markdown/Error.md`);
     }
@@ -40,7 +40,6 @@
   .main-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 1em 0;
     min-height: 100vh;
