@@ -1,11 +1,13 @@
 <script lang="ts">
   import { url } from '@roxi/routify';
+
+  /*
   import { onDestroy, onMount } from 'svelte';
 
   let sectionNodes: NodeListOf<HTMLElement>;
   let sectionObserver: IntersectionObserver;
 
-  /*
+  
   onMount(() => {
     sectionObserver = new IntersectionObserver(
       (entries: IntersectionObserverEntry[]) => {
