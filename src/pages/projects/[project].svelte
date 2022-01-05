@@ -14,6 +14,10 @@
         return await import(`../../markdown/PetSaver.md`);
       case 'SafeSpace':
         return await import(`../../markdown/SafeSpace.md`);
+      case 'ProjectKampong':
+        return await import(`../../markdown/ProjectKampong.md`);
+      case 'DigitalKampung':
+        return await import(`../../markdown/DigitalKampung.md`);
       default:
         return await import(`../../markdown/Error.md`);
     }
