@@ -26,6 +26,10 @@
         return await import(`../../markdown/Xpire.md`);
       case 'CanMakan':
         return await import(`../../markdown/CanMakan.md`);
+      case 'Yobu':
+        return await import(`../../markdown/Yobu.md`);
+      case 'SayNoToUILibraries':
+        return await import(`../../markdown/SayNoToUILibraries.md`);
       default:
         return await import(`../../markdown/Error.md`);
     }
