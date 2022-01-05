@@ -22,6 +22,10 @@
         return await import(`../../markdown/CULLinary.md`);
       case 'CULLinary2':
         return await import(`../../markdown/CULLinary2.md`);
+      case 'Xpire':
+        return await import(`../../markdown/Xpire.md`);
+      case 'CanMakan':
+        return await import(`../../markdown/CanMakan.md`);
       default:
         return await import(`../../markdown/Error.md`);
     }
