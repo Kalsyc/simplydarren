@@ -31,6 +31,14 @@
           projectTag="Web Dev"
         />
         <ProjectCellComponent
+          projectType="webdev"
+          projectParam="DigitalKampung"
+          projectImgPath="/img/digitalkampung-img.png"
+          projectTitle="Digital Kampung"
+          projectDesc="Rate, Review and Search Hawkers in Singapore"
+          projectTag="Web Dev"
+        />
+        <ProjectCellComponent
           projectType="gamedev"
           projectParam="CULLinary"
           projectImgPath="/img/cullinary-gif.gif"
