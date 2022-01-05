@@ -8,7 +8,7 @@
 
 ## Preface
 
-CanMakan is a simple webapp made in Svelte (of my choice due to my familiarity and speed with it). It was done as part of a mini-project with my boss, Donn, from my second internship at STUCK Design where we try to come up with useful applications that everyone can use.
+CanMakan is a simple webapp made in Svelte where users can check if they are able to dine-in at restaurants in Singapore based on their vaccination/recovery status. It was done as part of a mini-project with my boss, Donn, from my second internship at STUCK Design where we try to come up with useful applications that everyone can use.
 
 Unfortunately, shortly after releasing, the application was rendered useless as Singapore reverted back their COVID-19 rules...
 
