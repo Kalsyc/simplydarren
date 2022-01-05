@@ -15,12 +15,28 @@
       <span class="completed-title">Completed Projects</span>
       <div class="completed-grid">
         <ProjectCellComponent
+          projectType="appdev"
+          projectParam="Xpire"
+          projectImgPath="/img/projects/xpire-img.png"
+          projectTitle="Xpire"
+          projectDesc="Expiry Date Tracker Desktop App"
+          projectTag="App Dev"
+        />
+        <ProjectCellComponent
           projectType="uiux"
           projectParam="PetSaver"
           projectImgPath="/img/projects/petsaver-img.jpeg"
           projectTitle="PetSaver"
           projectDesc="Personal Savings App for UX Design Project"
           projectTag="UI/UX Design"
+        />
+        <ProjectCellComponent
+          projectType="vr"
+          projectParam="SafeSpace"
+          projectImgPath="/img/projects/safespace-img.png"
+          projectTitle="SafeSpace"
+          projectDesc="VR Mental Health Simulator and Meditation Guide"
+          projectTag="Virtual Reality"
         />
         <ProjectCellComponent
           projectType="webdev"
@@ -53,22 +69,6 @@
           projectTitle="CULLinary2"
           projectDesc="Dungeon Crawler and Delivery Simulator"
           projectTag="Game Dev"
-        />
-        <ProjectCellComponent
-          projectType="vr"
-          projectParam="SafeSpace"
-          projectImgPath="/img/projects/safespace-img.png"
-          projectTitle="SafeSpace"
-          projectDesc="VR Mental Health Simulator and Meditation Guide"
-          projectTag="Virtual Reality"
-        />
-        <ProjectCellComponent
-          projectType="appdev"
-          projectParam="Xpire"
-          projectImgPath="/img/projects/xpire-img.png"
-          projectTitle="Xpire"
-          projectDesc="Desktop Expiry Date Tracker Application"
-          projectTag="App Dev"
         />
         <ProjectCellComponent
           projectType="webdev"
