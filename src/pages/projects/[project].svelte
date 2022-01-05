@@ -29,7 +29,9 @@
 <main>
   <HeaderComponent />
   <div class="main-div">
-    <svelte:component this={mdDesc} />
+    <div class="markdown-component">
+      <svelte:component this={mdDesc} />
+    </div>
   </div>
   <FooterComponent />
 </main>
@@ -38,8 +40,13 @@
   .main-div {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 1em 0;
     min-height: 100vh;
+  }
+
+  .markdown-component {
+    width: 50%;
   }
 </style>
