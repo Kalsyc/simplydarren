@@ -68,6 +68,10 @@ Inventory management? Time crunch? Fetch quests? CULLinary 2 has them all.
 
 Same as the first game, we used Unity 2020.3.8f1 and a lot of C# madness for this game. Our animator and designer in chief (and his team) also used Blender for some of the modeling and animations :) Unlike the first game, the monsters in this game are all 'created'/'modified' from scratch (some based on existing free assets), including their animations.
 
+## Personal Contributions
+
+My personal contributions include getting the save system and database up, player locomotion and attacks (primary and secondary), shop & upgrade system, as well as some of the menu features like the inventory and creature dex.
+
 ## Useful Links
 
 The game can either be played on the browser or via an executable (Available on Windows, MacOS) which can be downloaded from the Releases on our GitHub repository/Itch.io page.

@@ -52,6 +52,10 @@ As a result, the number of visitors to the town is declining rapidly, running yo
 
 We used Unity 2020.2.3f1 and a lot of C# madness for this game. Our animator and designer in chief also used Blender for some of the modeling and animations :)
 
+## Personal Contributions
+
+My personal contributions include writing part of the map generation, getting the save system and database up, player locomotion and attacks, as well as the shop system.
+
 ## Useful Links
 
 The game can either be played on the browser or via an executable (Available on Windows, MacOS and Linux) which can be downloaded from the Releases on our GitHub repository. Instructions to download are in the repository's README.
