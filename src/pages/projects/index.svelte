@@ -17,12 +17,13 @@
           <a href={$url('/projects/:project', { project: 'PetSaver' })}>
             <img class="completed-img" alt="" src="/img/petsaver-img.jpeg" />
             <div class="completed-overlay">
-              <div class="completed-tag uiux-tag">UX/UI Design</div>
+              <div class="completed-tag uiux-tag">UI/UX Design</div>
               <div class="completed-text">
                 PetSaver
                 <br />
                 Personal Savings App for UX Design Student Project
               </div>
+              <div class="completed-text-res">PetSaver</div>
             </div>
           </a>
         </div>
@@ -36,6 +37,7 @@
                 <br />
                 An online collaborative platform for the Social Sector
               </div>
+              <div class="completed-text-res">Project Kampong</div>
             </div>
           </a>
         </div>
@@ -49,6 +51,7 @@
                 <br />
                 Search, Review and Rate Hawker stalls across Singapore!
               </div>
+              <div class="completed-text-res">Digital Kampung</div>
             </div>
           </a>
         </div>
@@ -62,6 +65,7 @@
                 <br />
                 Student Game Project, 1st Place at 18th iSTePS
               </div>
+              <div class="completed-text-res">CULLinary</div>
             </div>
           </a>
         </div>
@@ -75,6 +79,7 @@
                 <br />
                 Student Game Project, 1st Place at 19th iSTePS
               </div>
+              <div class="completed-text-res">CULLinary2</div>
             </div>
           </a>
         </div>
@@ -88,6 +93,7 @@
                 <br />
                 VR Mental Health Simulator and Meditation Guide
               </div>
+              <div class="completed-text-res">SafeSpace</div>
             </div>
           </a>
         </div>
@@ -101,6 +107,7 @@
                 <br />
                 Desktop Expiry Date Tracker Application written in Java
               </div>
+              <div class="completed-text-res">Xpire</div>
             </div>
           </a>
         </div>
@@ -114,6 +121,7 @@
                 <br />
                 Website that checks dine-in rules for vaccinated people
               </div>
+              <div class="completed-text-res">CanMakan</div>
             </div>
           </a>
         </div>
@@ -133,6 +141,7 @@
                 <br />
                 Social Gaming Platform - The newest way to connect
               </div>
+              <div class="completed-text-res">Yobu</div>
             </div>
           </a>
         </div>
@@ -146,6 +155,7 @@
                 <br />
                 Houses all my Frontend Components and UI Elements
               </div>
+              <div class="completed-text-res">SayNoToUILibraries</div>
             </div>
           </a>
         </div>
@@ -305,16 +315,36 @@
     .completed-tag {
       position: relative;
       text-align: left;
-      max-width: 35%;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
+      max-width: fit-content;
+      font-size: 0.75rem;
+    }
+
+    .completed-overlay {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .completed-text {
+      display: none;
+    }
+
+    .completed-text-res {
+      width: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: 700;
+      padding: 0 1em;
+      text-align: left;
+      font-size: 1.25rem;
+      justify-content: flex-start;
     }
   }
 
   @media screen and (max-width: 400px) {
-    .completed-text,
-    .completed-tag {
+    .completed-tag,
+    .completed-text-res {
       font-size: 0.75rem;
     }
   }
