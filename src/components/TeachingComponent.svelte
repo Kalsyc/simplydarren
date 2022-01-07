@@ -4,8 +4,9 @@
     <span class="teaching-designation">Teaching Assistant @ NUS</span>
     <span class="teaching-text">
       <ul>
-        <li>Taught basic programming in Python</li>
-        <li>Graded assignments and taught weekly tutorials</li>
+        <li>Taught basic programming in Python which includes syntax, OOP, data structures, abstraction and algorithms</li>
+        <li>Graded weekly assignments and taught tutorials</li>
+        <li>Handled 6 classes so far (totaling 60 students)</li>
       </ul>
     </span>
   </div>
@@ -17,7 +18,7 @@
       <ul>
         <li>Taught UX/UI design processes and prototyping skills in lab sessions</li>
         <li>Created and improved course material, graded assignments</li>
-        <li>Served as one of the Project Mentor for the module's group project</li>
+        <li>Served as a Project Mentor for the module's group project</li>
         <li>Handled administrative duties for 100+ students</li>
       </ul>
     </span>
@@ -30,7 +31,7 @@
       <ul>
         <li>Taught and handled lab sessions in Unity3D with AR/VR SDKs</li>
         <li>Graded assignments and improved/update course material</li>
-        <li>Served as one of the Project Mentor for the module's group project</li>
+        <li>Served as a Project Mentor for the module's group project</li>
       </ul>
     </span>
   </div>
