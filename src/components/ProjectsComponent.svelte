@@ -1,37 +1,9 @@
 <script lang="ts">
   import { url } from '@roxi/routify';
-
-  /*
-  import { onDestroy, onMount } from 'svelte';
-
-  let sectionNodes: NodeListOf<HTMLElement>;
-  let sectionObserver: IntersectionObserver;
-
-  
-  onMount(() => {
-    sectionObserver = new IntersectionObserver(
-      (entries: IntersectionObserverEntry[]) => {
-        const allVisibleSections: IntersectionObserverEntry[] = entries.filter((entry: IntersectionObserverEntry) => entry.isIntersecting);
-        if (allVisibleSections.length === 0) {
-          return;
-        }
-        allVisibleSections.forEach((container: IntersectionObserverEntry) => {
-          container.target.classList.add('project-div-anim');
-        });
-      },
-      { threshold: 0.01 },
-    );
-    sectionNodes = document.querySelectorAll('.project-div');
-    sectionNodes.forEach((section: HTMLElement) => sectionObserver.observe(section));
-  });
-
-  onDestroy(() => {
-    sectionNodes.forEach((section: HTMLElement) => sectionObserver.unobserve(section));
-  });
-  */
 </script>
 
 <div class="project-div">
+  <a class="project-button" href={$url('/projects')}>View All My Projects Here!</a>
   <div class="project-section">
     <div class="project-details">
       <div class="project-info">
@@ -46,7 +18,7 @@
       <img class="project-img" alt="" src="/img/projects/digitalkampung-img.png" />
     </div>
     <div class="project-links">
-      <a class="project-button" href={$url('/projects')}>About Project</a>
+      <a class="project-button" href={$url('/projects/DigitalKampung')}>About Project</a>
       <a class="project-button" href="https://digital-kampung.netlify.app/">Live Website</a>
       <a class="project-button" href="https://github.com/DigitalKampong">Source Code</a>
     </div>
@@ -65,10 +37,9 @@
       <img class="project-img" alt="" src="/img/projects/cullinary2-img.png" />
     </div>
     <div class="project-links">
-      <a class="project-button" href={$url('/projects')}>About Project</a>
+      <a class="project-button" href={$url('/projects/CULLinary')}>About CULLinary</a>
+      <a class="project-button" href={$url('/projects/CULLinary2')}>About CULLinary2</a>
       <a class="project-button" href="https://github.com/AngryEggplantStudios">Source Code</a>
-      <a class="project-button" href={$url('/projects/cull1')}>Play CULLinary</a>
-      <a class="project-button" href={$url('/projects/cull2')}>Play CULLinary2</a>
     </div>
   </div>
   <div class="project-section">
@@ -86,7 +57,7 @@
       <img class="project-img" alt="" src="/img/projects/kampong-img.png" />
     </div>
     <div class="project-links">
-      <a class="project-button" href={$url('/projects')}>About Project</a>
+      <a class="project-button" href={$url('/projects/ProjectKampong')}>About Project</a>
       <a class="project-button" href="https://github.com/Project-Kampong">Source Code</a>
     </div>
   </div>
@@ -105,7 +76,7 @@
       <img class="project-img" alt="" src="/img/projects/safespace-img.png" />
     </div>
     <div class="project-links">
-      <a class="project-button" href={$url('/projects')}>About Project</a>
+      <a class="project-button" href={$url('/projects/SafeSpace')}>About Project</a>
       <a class="project-button" href="https://github.com/Kalsyc/SafeSpace">Source Code</a>
     </div>
   </div>
