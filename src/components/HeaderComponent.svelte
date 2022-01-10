@@ -151,6 +151,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
   }
 
   /* Media queries */

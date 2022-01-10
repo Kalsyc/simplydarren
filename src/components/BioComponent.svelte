@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
     -webkit-animation: fadein 2s;
     -moz-animation: fadein 2s;
     -ms-animation: fadein 2s;
@@ -44,7 +45,6 @@
   .about-bio-text {
     font-weight: 500;
     font-size: 1.1rem;
-    text-justify: distribute-all-lines;
   }
 
   @keyframes fadein {

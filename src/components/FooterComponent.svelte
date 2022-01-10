@@ -57,4 +57,10 @@
     margin: 0.2em;
     color: #2c3e50;
   }
+
+  @media only screen and (max-width: 320px) {
+    .footer-links-div {
+      display: block;
+    }
+  }
 </style>
