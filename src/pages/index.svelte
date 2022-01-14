@@ -18,7 +18,7 @@
   };
 
   const goToResume = (): void => {
-    window.location.assign('https://kalsycdotcom.s3.ap-southeast-1.amazonaws.com/Sim+Jun+Yuen%2C+Darren+Resume+(1+Jan+2022).pdf');
+    window.location.assign('https://kalsycdotcom.s3.ap-southeast-1.amazonaws.com/Sim+Jun+Yuen%2C+Darren+Resume+(14+Jan+2022).pdf');
   };
 </script>
 
