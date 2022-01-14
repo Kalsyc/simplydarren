@@ -5,7 +5,7 @@
   <span class="contact-text">LinkedIn: <a class="contact-link" href="https://www.linkedin.com/in/kalsyc/">kalsyc</a></span>
   <span class="contact-text">GitHub: <a class="contact-link" href="https://github.com/Kalsyc">Kalsyc</a></span>
   <span class="contact-text"
-    >Resume: <a class="contact-link" href="https://kalsycdotcom.s3.ap-southeast-1.amazonaws.com/Sim+Jun+Yuen%2C+Darren+Resume+(1+Jan+2022).pdf"
+    >Resume: <a class="contact-link" href="https://kalsycdotcom.s3.ap-southeast-1.amazonaws.com/Sim+Jun+Yuen%2C+Darren+Resume+(14+Jan+2022).pdf"
       >Link</a
     ></span
   >
