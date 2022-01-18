@@ -5,8 +5,8 @@
   import { onMount } from 'svelte';
 
   let mdDesc;
-  let labTitle: string = $params.labTitle;
-  metatags.title = 'Simply Darren | ' + (labTitle === undefined ? 'Error' : labTitle.replaceAll('%20', ' '));
+  let labTitle: string = $params.labTitle.replaceAll('%20', ' ');
+  metatags.title = 'Simply Darren | ' + (labTitle === undefined ? 'Error' : labTitle);
 
   const importMarkdown = async () => {
     switch (labTitle) {
