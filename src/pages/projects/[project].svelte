@@ -5,8 +5,8 @@
   import { onMount } from 'svelte';
 
   let mdDesc;
-  let projectName: string = $params.project;
-  metatags.title = 'Simply Darren | ' + projectName;
+  let projectName: string = $params.project.replaceAll('%20', ' ');
+  metatags.title = 'Simply Darren | ' + (projectName === undefined ? 'Error' : projectName);
 
   const importMarkdown = async () => {
     switch (projectName) {
