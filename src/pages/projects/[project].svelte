@@ -6,7 +6,7 @@
 
   let mdDesc;
   let projectName: string = $params.project;
-  metatags.title = 'Simply Darren | ' + projectName;
+  metatags.title = 'Simply Darren | ' + (projectName === undefined ? 'Error' : projectName.replaceAll('%20', ' '));
 
   const importMarkdown = async () => {
     switch (projectName) {
