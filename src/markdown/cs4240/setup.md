@@ -46,6 +46,8 @@ After clicking install, they may prompt you to download platforms. For now, all 
 
 After the installation is complete, you should be able to create a brand new project :)
 
+[Go to Lab 1]()
+
 ## Useful Links
 
 [Link to Unity Manual](https://docs.unity3d.com/Manual/index.html)
