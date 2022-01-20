@@ -80,4 +80,30 @@ Now turn your attention to this widget on the top right.
   <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/unity-tut/lab1/unity-perspective-widget-img.png" width="90%" height="auto" />
 </p>
 
-This widget is probably the most helpful within the scene tab as it shows you the 3 dimensions (x, y, z) which will help you visualize what perspective of the scene are you looking from.
+This widget is probably the most helpful within the scene tab as it shows you the 3 dimensions (x, y, z) which will help you visualize what perspective of the scene are you looking from. Okay, now in order to interact with the Scene, we must first learn how to move around!
+
+- Right Click + Drag rotates the scene
+- Zoom in/out moves you forwards or backwards
+- Middle Click + Drag moves you laterally
+- Arrow Keys to move left/right/up/down
+- Right Click + WASDQE activates Flythrough mode like in first-person games (Hold shift to move faster)
+
+### Game Tab
+
+Now, you'll notice that there's a tab called Game beside the Scene tab. This tab shows the view of your main camera (and other cameras too depending on your settings). The main camera is usually defined as the first camera in Hierarchy (although you can change that) if it is not specified. Right now it shouldn't really show you much other than where your main camera is currently looking at. But we will touch more on the camera in the next lab as we will be focusing our camera on a controllable player.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/unity-tut/lab1/unity-game-tab-img.png" width="90%" height="auto" />
+</p>
+
+Notice that there are 3 buttons that represents "Play", "Pause" and "Forward" on the right. They won't be useful for now but pressing "Play" basically renders the scene and starts it. Imagine if you have your scene set up in a game, the "Play" button will basically load the scene and run all your scripts, objects and animations. The "Pause" button allows you to pause the scene and resume it after playing. The "Forward" button... honestly I almost never use it. It's not useful for now. :)
+
+### Hierarchy
+
+Next, we have the Hierarchy where it lists down all the GameObjects within your scene. Basically, anything that you add to the scene will appear as a GameObject in Hierarchy. A GameObject can be any item or asset such as a house, a player, an enemy, camera, light objects, etc. You can even add a blank GameObject where it contains all your scripts required to run the scene or any events within your game/application. You can also nest GameObjects and group them together so that it is easier for you to inspect/modify them in the scene.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/unity-tut/lab1/unity-hierarchy-img.png" width="90%" height="auto" />
+</p>
+
+Right now, we only have the Main Camera and the Directional Light in the scene.
