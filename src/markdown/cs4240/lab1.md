@@ -107,3 +107,19 @@ Next, we have the Hierarchy where it lists down all the GameObjects within your 
 </p>
 
 Right now, we only have the Main Camera and the Directional Light in the scene.
+
+### Project
+
+This panel will basically show all of the folders, assets and scripts that you have in your project folder. This is not the same as Hierarchy because the Hierarchy only concerns Game Objects that are in the current scene whereas the Project panel contains everything else (including other scenes). Here is where you can create new folders and organize your repository, as well as creating new scenes and opening them up to edit/play them.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/unity-tut/lab1/unity-project-img.png" width="90%" height="auto" />
+</p>
+
+### Inspector
+
+This last panel that we are going to cover is probably the one that you are going to look at the most. The Inspector basically displays the properties of any item within the Hierarchy or Project (as long as you click on it). You can modify/rename/add things through the Inspector and that's how we will be working with items in your project.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:700px" src="/img/unity-tut/lab1/unity-inspector-img.png" width="90%" height="auto" />
+</p>
