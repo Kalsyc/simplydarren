@@ -14,6 +14,8 @@
         return await import(`../../markdown/cs4240/setup.md`);
       case 'Lab 1':
         return await import(`../../markdown/cs4240/lab1.md`);
+      case 'Lab 2':
+        return await import(`../../markdown/cs4240/lab2.md`);
       case 'VSCode Setup':
         return await import(`../../markdown/cs4240/vscode-setup.md`);
       default:
