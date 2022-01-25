@@ -123,3 +123,27 @@ To make this force more flexible, you can add one more variable speed. In order 
 </p>
 
 Now, you can set any value to the speed in the inspector and testplay your ball. Hit Play on the Editor and use your arrow keys/WASD, you will see it can move!
+
+## Camera Control
+
+To make this game more user-friendly, we need to make the camera follow your Player. To achieve this, we need to tie our camera to the Player. First, click your Main Camera in Hierarchy panel. We need to set its position as (0, 10, -10) and its rotation as (45, 0, 0). Now it is a third-player view to your Player.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/unity-tut/lab2/roll-code7-img.png" width="90%" height="auto" />
+</p>
+
+Then, we need to add some scripts to make our camera move following the Player. We need to create a new script “CameraControl” and attach it onto the Main Camera. The LateUpdate() is to guarantee that all the update has been done in each frame and then update this function.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/unity-tut/lab2/roll-code8-img.png" width="90%" height="auto" />
+</p>
+
+After completing this script, you need to drag the Player in the Hierarchy panel onto the player in Inspector of CameraControl so that you get the reference. The reason we have to do this is because the Camera and the Player are two separate GameObjects and that this the only way that the camera is able to get the reference of the player. (Yes, there are other ways, but this will do for this current game)
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/unity-tut/lab2/roll-code9-img.png" width="90%" height="auto" />
+</p>
+
+Now press play and move the ball! You will realize that your camera now follows the ball wherever you move!
+
+## Create Pick-Up Items
