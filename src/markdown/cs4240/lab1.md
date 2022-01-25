@@ -203,3 +203,100 @@ After you click import, ensure that you only check the Environment folder! Not d
 <p align="center">
   <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/unity-tut/lab1/unity-environment-img.png" width="90%" height="auto" />
 </p>
+
+Now let’s get painting. Select the terrain in the Hierarchy. You should see the painting options displayed in the Inspector. Select the icon with the paint brush. Once selected, you should see a Paint Texture section below with an Edit Terrain Layers button.
+
+Click the button and select Create Layer. A new window will appear called Select Texture2D. You will have to choose an image to be the texture you are going to paint.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:300px" src="/img/unity-tut/lab1/unity-terrain-paint-img.png" width="90%" height="auto" />
+</p>
+
+Double-click on the texture you want to select it. You should see this texture being applied to the whole terrain.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-painted-img.png" width="90%" height="auto" />
+</p>
+
+Now feel free to add as many textures as possible to make your environment come to life!
+
+### Improving Your Scene
+
+Now that we have our Terrain textured, let’s add some trees.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:400px" src="/img/unity-tut/lab1/unity-tree-img.png" width="90%" height="auto" />
+</p>
+
+Click on the middle icon, followed by 'Edit Trees...' and 'Add Tree'. Choose a tree that you have downloaded from the Standard Assets just now as the Tree Prefab. Once that is done, you should see the tree pop up
+and you'll be able to plant them as you click on your terrain.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-tree-terrain-img.png" width="90%" height="auto" />
+</p>
+
+You can play around with the options like Tree height and density to get different effects. Go ahead and go crazy painting the trees onto the terrain.
+
+Congrats! You have completed the basic Terrain design.
+
+You may press the Play button and adjust your Main Camera in Hierarchy at an appropriate spot to view your Scene :)
+
+### Setting Up Lighting
+
+As you can see, the view is very dark when you press Play. The reason for this is that there is no lighting set up in the scene. Let’s add some lights now. To do so, go to the toolbar and click GameObject > Light. and you should see a list of different types of lights to use.
+
+Again, the best way to know the difference between these lights is to try them out. For this lab, we are going to add a directional light. Position the directional light above the terrain. You can rotate the light to give different effects. The yellow lines show you the direction the light is coming from. This will also cast shadows depending on the direction the light is coming from.
+
+The default scene also gives you a default Directional Light to play around with so feel free to adjust that instead if it is too bright.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-light-img.png" width="90%" height="auto" />
+</p>
+
+### Setting Up Skybox
+
+Well done! Now we have our scene set up. Let’s beautify it further by setting sky for the scene. In Unity, we can do this very easily by setting a Skybox. Click Window > Rendering > Lighting.
+
+A Unity skybox is basically a cube that is drawn behind all graphics in the game. Basically what it does is that the Skybox wraps around your entire scene, giving it the impression of a Sky in your Scene. Internally skyboxes are rendered after all opaque objects; and the mesh used to render them is either a box with six textures, or a tessellated sphere.
+
+Now let’s set the Skybox. Click to the Environment tab and you may change the skybox as such by clicking to change:
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-skybox-img.png" width="90%" height="auto" />
+</p>
+
+You may notice that the full terrain can be seen in the game, even objects that are far away. This is fine but not very realistic. Naturally, when we look out at a horizon, things that are very far away tend to blend in with the horizon. We can simulate a similar effect by adding fog. Let’s add some fog. You can add it by checking the Fog checkbox below where you set your skybox.
+
+Play around with the density of the fog so that you don't get a Silent Hill game.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-fog-img.png" width="90%" height="auto" />
+</p>
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-set-fog-img.png" width="90%" height="auto" />
+</p>
+
+### Placing Water
+
+Now we come to the last part of the terrain building which is to add water. Water is a prefab within the Environments folder in the Standard Assets that you just downloaded. All you need to do is to locate it and drag it into your Scene.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-water-img.png" width="90%" height="auto" />
+</p>
+
+If you are wondering what a prefab is, it's basically a 'fixed' GameObject with all its components and child objects that you can store in your project folder (like a template). It's very useful when you need to instantiate things like an Enemy or a fixed prop in your scene.
+
+You can make any GameObject in Hierarchy a prefab by dragging it into your Project. Be aware that creating a prefab means that this GameObject now exists independently of other GameObjects. If you have any references of the prefab to existing GameObjects in Hierarchy (and they are not related), the references will disappear.
+
+You probably need to resize your water accordingly to get the size that is appropriate for your terrain. Now press play to see how the water looks like in the game. You may not be able to see the effect of the water if your camera is too far. Reposition your camera nearer to the water to see it. ☺
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab1/unity-finished-img.png" width="90%" height="auto" />
+</p>
+
+That’s all! You have now completed your first lab on Unity. For the next Unity lab, you will be learning basic scripting in Unity. ☺
+
+[Original Post](https://varlabs.comp.nus.edu.sg/unitylab/learn/core_1.html)
+
+_Written By Darren Sim (Last Updated 26 Jan 2022)_
