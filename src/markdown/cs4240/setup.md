@@ -46,7 +46,7 @@ After clicking install, they may prompt you to download platforms. For now, all 
 
 After the installation is complete, you should be able to create a brand new project :)
 
-[Go to Lab 1]()
+[Go to Lab 1](https://www.simplydarren.com/unity-tut/Lab%201)
 
 ## Useful Links
 
