@@ -39,3 +39,27 @@ At Project panel, right click and choose Create > Folder. You can name this fold
 <p align="center">
   <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/unity-tut/lab2/roll-ground2-img.png" width="90%" height="auto" />
 </p>
+
+## Player Locomotion
+
+To add physical properties to this ball and make it be able to move, we need to add Rigidbody to it. You need to choose Player at Hierarchy panel and click Add Component at Inspector panel. Search for Ridigbody and click it to add it to your Player.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:400px" src="/img/unity-tut/lab2/roll-locomotion-img.png" width="90%" height="auto" />
+</p>
+
+A Rigidbody component adds control of Unity's Physics Engine to the GameObject. Even without adding any code, a Rigidbody object will be pulled downward by gravity and will react to collisions with incoming objects if the right Collider component is also present.
+
+The Rigidbody also has a scripting API that lets you apply forces to the object and control it in a physically realistic way. For example, a car's behaviour can be specified in terms of the forces applied by the wheels. Given this information, the physics engine can handle most other aspects of the car's motion, so it will accelerate realistically and respond correctly to collisions.
+
+Next, let's add a custom C# Script so that we can take in Player Input and allow us to move our player ball.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:300px" src="/img/unity-tut/lab2/roll-locomotion2-img.png" width="90%" height="auto" />
+</p>
+
+We can do so by clicking on Add Component in the Inspector panel of Player, type in the name of our C# class script, hit New Script > Create and Add. This creates a PlayerLocomotion.cs file that we can edit in VSCode/Visual Studio.
+
+Note that scripts can always be dragged in from your project folder. You can also choose to create the C# script within a separate folder in Project for better organization as adding scripts via the Inspector places the script in the root Assets folder by default.
+
+After creating the PlayerLocomotion.cs script, double click it to edit it in VSCode/Visual Studio.
