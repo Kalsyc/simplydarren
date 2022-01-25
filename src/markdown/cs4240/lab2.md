@@ -1,5 +1,9 @@
 <h1 align="center">Lab 2 - Scripting with C# in Unity</h1>
 
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:600px" src="/img/unity-tut/lab2/roll-header-img.png" width="90%" height="auto" />
+</p>
+
 ## Preface
 
 Great! Now that you have mastered the Unity Engine. It's time to code and have a small running game! This time, we will do a “Roll a Ball” game. You can either use the same project from Lab 1 or create a new one, just make sure that you use a different scene this time!
@@ -147,3 +151,59 @@ After completing this script, you need to drag the Player in the Hierarchy panel
 Now press play and move the ball! You will realize that your camera now follows the ball wherever you move!
 
 ## Create Pick-Up Items
+
+As you play with your ball, you will find it will drop off from the plane. We need to add some walls to this plane. You need to create an empty object first and rename it as “Wall”. Then add 4 Cubes as the children of this Wall object. It should look like this.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/unity-tut/lab2/roll-item-img.png" width="90%" height="auto" />
+</p>
+
+Now we will start to add some pick-up items to this game.
+
+Firstly, we create a cube named Pickup with these properties.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:400px" src="/img/unity-tut/lab2/roll-item2-img.png" width="90%" height="auto" />
+</p>
+
+Then, we add a script named “Rotator” to it to make it rotate all the time.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/unity-tut/lab2/roll-item3-img.png" width="90%" height="auto" />
+</p>
+
+Now, we create a new folder named “Prefabs”. We need to create a new material for the Pickup and I choose yellow as the color. Then, you can drag your Pickup object from Hierarchy to the Prefabs folder to save it as a prefab.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:800px" src="/img/unity-tut/lab2/roll-item4-img.png" width="90%" height="auto" />
+</p>
+
+After creating the prefab, you can add a few more pick-up items in your scene. If you wish to modify any further, you can simply modify within the prefab and all your pickup cubes will change. How neat!
+
+Now, we need to make our ball be able to collect the items. To start, I have to introduce the Collider. You will find that there are colliders on both Player and Pickup. They are used for judging whether this object has collision with other objects which have collider. Now your Player cannot enter Pickup, but after you mark the IsTrigger on the Pickup prefab. Your Player is able to enter Pickup, and then we can detect this collision in our following steps.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:400px" src="/img/unity-tut/lab2/roll-item5-img.png" width="90%" height="auto" />
+</p>
+
+The one more thing we need to do is to add a tag to this object. You need to click tag and add a new tag named “Pickup”.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:400px" src="/img/unity-tut/lab2/roll-item6-img.png" width="90%" height="auto" />
+</p>
+
+Now we need to edit the PlayerControl script to detect the collision and make some actions. We need to add one more function in this script.
+
+<p align="center">
+  <img alt="" style="margin: 0 auto; object-fit:fill; max-width:500px" src="/img/unity-tut/lab2/roll-item7-img.png" width="90%" height="auto" />
+</p>
+
+OnTriggerEnter is the default function of Unity3D to detect the collision between objects. What we need to do is to set the pick-up item invisible as our ball hit them.
+
+Therefore, we need to check whether the object entering is “Pickup”, and if it is Pickup, we need to set SetActive as false and it will become invisible (or destroy it if you don't need via GameObject.Destroy()).
+
+Congrats! You have created a simple game :) Try and experiment more and play around~ Add things such as a UI to show how many pick-up items you have collected or another player action such as Jump!
+
+[Original Post](https://varlabs.comp.nus.edu.sg/unitylab/learn/core_2.html)
+
+_Written By Darren Sim (Last Updated 26 Jan 2022)_

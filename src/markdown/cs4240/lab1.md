@@ -297,6 +297,8 @@ You probably need to resize your water accordingly to get the size that is appro
 
 That’s all! You have now completed your first lab on Unity. For the next Unity lab, you will be learning basic scripting in Unity. ☺
 
+[Go to Lab 2](https://www.simplydarren.com/unity-tut/Lab%202)
+
 [Original Post](https://varlabs.comp.nus.edu.sg/unitylab/learn/core_1.html)
 
 _Written By Darren Sim (Last Updated 26 Jan 2022)_
