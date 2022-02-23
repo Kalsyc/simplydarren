@@ -93,7 +93,7 @@
       <span class="timeline-title">Alasco</span>
       <span class="timeline-designation">Frontend Engineer</span>
       <div class="timeline-divider" />
-      <span class="timeline-date">June 2022 (Pending) | München, Deutschland</span>
+      <span class="timeline-date">Jun 2022 (Pending) | Munich, Germany</span>
     </div>
   </div>
 </div>
