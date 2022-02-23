@@ -44,7 +44,7 @@
       <span class="timeline-title">WaveScan Technologies Pte. Ltd</span>
       <span class="timeline-designation">UI/UX Developer Intern</span>
       <div class="timeline-divider" />
-      <span class="timeline-date">May 2020 - Dec 2020</span>
+      <span class="timeline-date">May 2020 - Dec 2020 | Singapore</span>
       <span class="timeline-text">
         <ul>
           <li>Joined Singapore-based startup WaveScan as an UI/UX Developer in May 2020</li>
@@ -67,7 +67,7 @@
       <span class="timeline-title">STUCK Design</span>
       <span class="timeline-designation">Full Stack Developer Intern</span>
       <div class="timeline-divider" />
-      <span class="timeline-date">May 2021 - Sep 2021 </span>
+      <span class="timeline-date">May 2021 - Sep 2021 | Singapore</span>
       <span class="timeline-text">
         <ul>
           <li>Joined Singapore-based Industrial Design company STUCK Design as a Full Stack Developer Intern in May 2021</li>
@@ -82,10 +82,18 @@
   </div>
   <div class="timeline-container right" id="slide-right">
     <div class="timeline-content">
-      <span class="timeline-title">Graduation (Pending)</span>
+      <span class="timeline-title">Graduation</span>
       <div class="timeline-divider" />
       <span class="timeline-date">May 2022</span>
       <span class="timeline-text">Due to graduate from NUS with a Bachelor of Computing (Distinction) in Computer Science in May 2022</span>
+    </div>
+  </div>
+  <div class="timeline-container left" id="slide-left">
+    <div class="timeline-content">
+      <span class="timeline-title">Alasco</span>
+      <span class="timeline-designation">Frontend Engineer</span>
+      <div class="timeline-divider" />
+      <span class="timeline-date">Jun 2022 (Pending) | Munich, Germany</span>
     </div>
   </div>
 </div>
