@@ -84,8 +84,8 @@
     <div class="timeline-content">
       <span class="timeline-title">Graduation</span>
       <div class="timeline-divider" />
-      <span class="timeline-date">May 2022</span>
-      <span class="timeline-text">Due to graduate from NUS with a Bachelor of Computing (Distinction) in Computer Science in May 2022</span>
+      <span class="timeline-date">Jun 2022</span>
+      <span class="timeline-text">Graduated from NUS with a Bachelor of Computing (Distinction) in Computer Science in Jun 2022</span>
     </div>
   </div>
   <div class="timeline-container left" id="slide-left">
@@ -93,7 +93,7 @@
       <span class="timeline-title">Alasco</span>
       <span class="timeline-designation">Frontend Engineer</span>
       <div class="timeline-divider" />
-      <span class="timeline-date">Jun 2022 (Pending) | Munich, Germany</span>
+      <span class="timeline-date">Aug 2022 | Munich, Germany</span>
     </div>
   </div>
 </div>
